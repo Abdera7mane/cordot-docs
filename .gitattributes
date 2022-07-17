@@ -1,3 +1,8 @@
 # Allow Markdown language to be detected
 *.md linguist-detectable=true
 README.md linguist-detectable=false
+
+docs/** linguist-documentation=false
+
+docs/js/custom.js linguist-vendored=true
+docs/css/custom.css linguist-vendored=true
