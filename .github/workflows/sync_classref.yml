@@ -21,6 +21,10 @@ jobs:
           ref: ${{ inputs.ref }}
           path: cordot
           submodules: true
+      - name: Set environment variables
+        run: | 
+          echo "CORDOT_BRANCH=$(git -C cordot branch --show-current)" >> $GITHUB_ENV
+          echo "CORDOT_HASH=$(git -C cordot rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: paulloz/godot-action@v1
         with:
           version: 3.4.4
@@ -36,17 +40,14 @@ jobs:
           mv cordot/doc/classes/class_*.md docs/classes
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
-        env:
-          CORDOT_BRANCH: $(git -C cordot branch --show-current)
-          CORDOT_HASH: $(git -C cordot rev-parse --short HEAD)
         with:
-          title: Sync class reference documentation on 
+          title: Sync class reference documentation on ${{ github.ref_name }}
           body: |
-            branch: `$CORDOT_BRANCH`
-            commit: Abdera7mane/cordot@$CORDOT_HASH
+            branch: `${{ env.CORDOT_BRANCH }}`
+            commit: Abdera7mane/cordot@${{ env.CORDOT_HASH }}
 
             target_branch: `${{ github.ref_name }}`
           add-paths: docs/classes/class_*.md
           branch: sync-classref/patch
-          commit-message: Sync class reference with the $CORDOT_BRANCH branch ($CORDOT_HASH)
+          commit-message: Sync class reference with the ${{ env.CORDOT_BRANCH }} branch (${{ env.CORDOT_HASH }})
           delete-branch: true
