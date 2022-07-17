@@ -1,0 +1,3 @@
+# Allow Markdown language to be detected
+*.md linguist-detectable=true
+README.md linguist-detectable=false
