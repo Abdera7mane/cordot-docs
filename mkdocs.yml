@@ -1,0 +1,35 @@
+site_name: Cordot documentation
+repo_url: https://github.com/Abdera7mane/cordot-docs
+copyright: "&copy Copyright 2021-2022 Abdera7mane"
+use_directory_urls: false
+
+theme:
+    name: readthedocs
+    logo: img/docs.png
+    custom_dir: custom_theme/
+
+extra_javascript:
+  - js/custom.js
+  - js/gdscript.min.js
+
+extra_css:
+  - css/custom.css
+  - css/extra.css
+  - css/tabbed.css
+
+markdown_extensions:
+    - toc:
+        permalink: "¶"
+    - admonition
+    - pymdownx.tabbed
+    - pymdownx.superfences:
+        css_class: css/extra.css
+
+plugins:
+    - search
+    - awesome-pages
+
+nav:
+    - 'Class reference':
+        - 'Cordot API':
+            - '... | flat | classes/*.md'

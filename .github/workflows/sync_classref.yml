@@ -1,0 +1,52 @@
+name: Sync class reference
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'The branch, tag or SHA to checkout'
+        required: true
+        default: 'master' 
+        type: string
+
+jobs:
+  sync:
+    name: Sync class reference documentation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Checkout Cordot repo
+        uses: actions/checkout@v3
+        with:
+          repository: abdera7mane/cordot
+          ref: ${{ inputs.ref }}
+          path: cordot
+          submodules: true
+      - uses: paulloz/godot-action@v1
+        with:
+          version: 3.4.4
+          export-templates: false
+      - name: Generate class reference Makrdown
+        run: |
+          touch project.godot
+          timeout 15s godot --editor || true
+          godot --editor --script doc/tools/MarkdownGeneratorCLI.gd --godot_docs "3.5"
+        working-directory: cordot
+      - run: |
+          mkdir -p docs/classes
+          mv cordot/doc/classes/class_*.md docs/classes
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        env:
+          CORDOT_BRANCH: $(git -C cordot branch --show-current)
+          CORDOT_HASH: $(git -C cordot rev-parse --short HEAD)
+        with:
+          title: Sync class reference documentation on 
+          body: |
+            branch: `$CORDOT_BRANCH`
+            commit: Abdera7mane/cordot@$CORDOT_HASH
+
+            target_branch: `${{ github.ref_name }}`
+          add-paths: docs/classes/class_*.md
+          branch: sync-classref/patch
+          commit-message: Sync class reference with the $CORDOT_BRANCH branch ($CORDOT_HASH)
+          delete-branch: true

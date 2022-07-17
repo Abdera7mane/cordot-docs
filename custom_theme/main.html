@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{# hides edit url for class documentation #}
+{% if page and page.url.startswith("classes/class_") %}
+	{# very ugly #}
+	{% set _ = page.__setattr__('edit_url', None) %}
+{% endif %}
