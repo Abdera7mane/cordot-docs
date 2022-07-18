@@ -28,6 +28,9 @@ markdown_extensions:
 plugins:
     - search
     - awesome-pages
+    - mkdocs-simple-hooks:
+        hooks:
+            on_config: "hooks.config:configure"
 
 nav:
     - 'Class reference':
