@@ -1,3 +1,5 @@
+@import url("custom.css");
+
 .rst-content pre code {
 	font-size: 14px;
 	line-height: 1.5;
@@ -15,7 +17,7 @@ td, th {
 
 .fa-github::before,
 .icon-github::before {
-  content: "" !important;
+	content: "" !important;
 }
 
 .icon::before {
@@ -33,6 +35,46 @@ td, th {
 	background-repeat: no-repeat;
 	background-image: var(--external-reference-icon);
 	padding-right: 13px;
+}
+
+.rst-versions {
+	position: fixed;
+	bottom: 0;
+	left: inherit;
+}
+
+.rst-versions .rst-badge {
+	width: 100%;
+	bottom: 0;
+	right: unset;
+}
+
+.rst-versions.rst-badge > .rst-current-version {
+	height: 44px;
+  	padding: 12px;
+	line-height: initial;
+	text-align: right;
+}
+
+.rst-versions
+.rst-badge
+.fa-book, .rst-versions 
+.rst-badge
+.icon-book {
+  float: left;
+  line-height: 0;
+}
+
+.rst-versions .rst-current-version {
+	padding: 12px;
+	display: block;
+	text-align: right;
+	font-size: 90%;
+	line-height: initial;
+}
+
+.fa-book::after {
+    content: "Read the Docs";
 }
 
 :root {
