@@ -1,3 +1,5 @@
+@import url("custom.css");
+
 .rst-content pre code {
 	font-size: 14px;
 	line-height: 1.5;
@@ -69,6 +71,10 @@ td, th {
 	text-align: right;
 	font-size: 90%;
 	line-height: initial;
+}
+
+.fa-book::after {
+    content: "Read the Docs";
 }
 
 :root {
