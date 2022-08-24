@@ -4,28 +4,12 @@
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Discord REST API constants  
+  
 ## Constants
   
-- <a name="constant-APPLICATION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **APPLICATION** = 0  
-  
-	> *There is currently no description for this constant.*  
-________________
-
-- <a name="constant-CHANNEL"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **CHANNEL** = 1  
-  
-	> *There is currently no description for this constant.*  
-________________
-
-- <a name="constant-WEBHOOK"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **WEBHOOK** = 5  
-  
-	> *There is currently no description for this constant.*  
-________________
-
-- <a name="constant-USER"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **USER** = 4  
-  
-	> *There is currently no description for this constant.*  
-________________
-
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **ENDPOINTS**  
   
 	- **INVITE** = "/invites/{invite_code}"  
@@ -237,12 +221,7 @@ ________________
 	- **FOLLOWUP\_MESSAGE** = "/webhooks/{application_id}/{token}/messages/{message_id}"  
 
   
-	> *There is currently no description for this constant.*  
-________________
-
-- <a name="constant-INTERACTION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **INTERACTION** = 3  
-  
-	> *There is currently no description for this constant.*  
+	Discord REST API endpoints.  
 ________________
 
 - <a name="constant-GUILD"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD** = 2  
@@ -250,7 +229,32 @@ ________________
 	> *There is currently no description for this constant.*  
 ________________
 
-- <a name="constant-CDN-FILE-FORMATS"></a>[PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) **CDN\_FILE\_FORMATS** = [jpg, jpeg, png, webp, gif, json]  
+- <a name="constant-CHANNEL"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **CHANNEL** = 1  
   
-	> *There is currently no description for this constant.*
+	> *There is currently no description for this constant.*  
+________________
+
+- <a name="constant-APPLICATION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **APPLICATION** = 0  
+  
+	Discord REST API types.  
+________________
+
+- <a name="constant-INTERACTION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **INTERACTION** = 3  
+  
+	> *There is currently no description for this constant.*  
+________________
+
+- <a name="constant-USER"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **USER** = 4  
+  
+	> *There is currently no description for this constant.*  
+________________
+
+- <a name="constant-WEBHOOK"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **WEBHOOK** = 5  
+  
+	> *There is currently no description for this constant.*  
+________________
+
+- <a name="constant-CDN-FILE-FORMATS"></a>PoolStringArray **CDN\_FILE\_FORMATS** = [jpg, jpeg, png, webp, gif, json]  
+  
+	Discord CDN file formats.
   

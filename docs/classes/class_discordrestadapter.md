@@ -4,6 +4,10 @@
 **Inherits:** [Node](https://docs.godotengine.org/en/3.5/classes/class_node.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Standalone Discord REST API client.  
+  
 ## Properties
   
 | type                                                    | name                                 |
@@ -19,111 +23,62 @@
   
 ## Methods
   
-| return type                                         | signature                                                                                                                                                                                                                                                                                                       |
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTAdapter](./class_discordrestadapter.md) | [DiscordRESTAdapter](#method-DiscordRESTAdapter) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [BaseDiscordEntityManager](./class_basediscordentitymanager.md) entity\_manger, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)** |  
+| return type                                         | signature                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [DiscordRESTAdapter](./class_discordrestadapter.md) | [DiscordRESTAdapter](#method-DiscordRESTAdapter) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [DiscordEntityManager](./class_discordentitymanager.md) entity\_manager=DiscordEntityManager.new(), [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)** |  
   
 ## Property Descriptions
   
 - <a name="property-requester"></a>[DiscordRESTRequester](./class_discordrestrequester.md) **requester**  
   
-	> *There is currently no description for this property.*  
+	REST API requester instance.  
 ________________
 
 - <a name="property-mediator"></a>[DiscordRESTMediator](./class_discordrestmediator.md) **mediator**  
   
-	> *There is currently no description for this property.*  
+	Mediator of this client.  
 ________________
 
 - <a name="property-application"></a>[ApplicationRESTAPI](./class_applicationrestapi.md) **application**  
   
-	> *There is currently no description for this property.*  
+	Application REST API client.  
 ________________
 
 - <a name="property-channel"></a>[ChannelRESTAPI](./class_channelrestapi.md) **channel**  
   
-	> *There is currently no description for this property.*  
+	Channel REST API client.  
 ________________
 
 - <a name="property-guild"></a>[GuildRESTAPI](./class_guildrestapi.md) **guild**  
   
-	> *There is currently no description for this property.*  
+	Guild REST API client.  
 ________________
 
 - <a name="property-interaction"></a>[InteractionRESTAPI](./class_interactionrestapi.md) **interaction**  
   
-	> *There is currently no description for this property.*  
+	Interaction REST API client.  
 ________________
 
 - <a name="property-user"></a>[UserRESTAPI](./class_userrestapi.md) **user**  
   
-	> *There is currently no description for this property.*  
+	User REST API client.  
 ________________
 
 - <a name="property-webhook"></a>[WebhookRESTAPI](./class_webhookrestapi.md) **webhook**  
   
-	> *There is currently no description for this property.*
+	Webhook REST API client.
   
   
 ## Method Descriptions
   
-- <a name="method-DiscordRESTAdapter"></a>[DiscordRESTAdapter](./class_discordrestadapter.md) **DiscordRESTAdapter** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [BaseDiscordEntityManager](./class_basediscordentitymanager.md) entity\_manger, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**  
+- <a name="method-DiscordRESTAdapter"></a>[DiscordRESTAdapter](./class_discordrestadapter.md) **DiscordRESTAdapter** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [DiscordEntityManager](./class_discordentitymanager.md) entity\_manager=DiscordEntityManager.new(), [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**  
   
-	> *There is currently no description for this method.*  
+	Constructs a new `DiscordRESTAdapter` with a bot `token`. You can optionally
+	pass an `entity_manager` for different caching settings. `use_pool` enables
+	the use of a HTTP connection pool (experimental unstable feature).  
 ________________
 
   
   
 ## Sub Classes
-  
-________________
-  
-  
-# Mediator
-  
-**Inherits:** [DiscordRESTMediator](./class_discordrestmediator.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
-  
-  
-## Properties
-  
-| type                                                                      | name                       |
-|---------------------------------------------------------------------------|----------------------------|
-| [WeakRef](https://docs.godotengine.org/en/3.5/classes/class_weakref.html) | [client](#property-client) |  
-  
-## Methods
-  
-| return type                                                                 | signature                                                                                                                                                                                                                                                                                    |
-|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTAdapter.Mediator](./class_discordrestadapter.md#mediator)       | [Mediator](#method-Mediator) **(** [DiscordRESTAdapter](./class_discordrestadapter.md) rest\_client **)**                                                                                                                                                                                    |
-| [DiscordRESTAdapter](./class_discordrestadapter.md)                         | [get\_rest](#method-get-rest) **(**  **)**                                                                                                                                                                                                                                                   |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html)   | [request\_async](#method-request-async) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) type, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) request, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) arguments **)** |
-| [Resource](https://docs.godotengine.org/en/3.5/classes/class_resource.html) | [cdn\_download\_async](#method-cdn-download-async) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) url **)**                                                                                                                                                   |  
-  
-## Property Descriptions
-  
-- <a name="property-client"></a>[WeakRef](https://docs.godotengine.org/en/3.5/classes/class_weakref.html) **client**  
-  
-	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
-- <a name="method-Mediator"></a>[DiscordRESTAdapter.Mediator](./class_discordrestadapter.md#mediator) **Mediator** **(** [DiscordRESTAdapter](./class_discordrestadapter.md) rest\_client **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-rest"></a>[DiscordRESTAdapter](./class_discordrestadapter.md) **get\_rest** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-request-async"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **request\_async** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) type, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) request, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) arguments **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-cdn-download-async"></a>[Resource](https://docs.godotengine.org/en/3.5/classes/class_resource.html) **cdn\_download\_async** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) url **)**  
-  
-	> *There is currently no description for this method.*
   

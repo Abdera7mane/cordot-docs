@@ -4,6 +4,10 @@
 **Inherits:** [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Holds permissions of a role or member on a channel-level.  
+  
 ## Properties
   
 | type                                                              | name                     |
@@ -27,31 +31,26 @@
 	- **MEMBER** = 1  
 
   
-	> *There is currently no description for this constant.*
+	Overwrite target.
   
   
 ## Property Descriptions
   
 - <a name="property-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **type**  
   
-	> *There is currently no description for this property.*  
+	Overwrite target type, can be either `Type.ROLE` or `Type.MEMBER`.  
 ________________
 
 - <a name="property-allow"></a>[BitFlag](./class_bitflag.md) **allow**  
   
-	> *There is currently no description for this property.*  
+	Allowed permissions.  
 ________________
 
 - <a name="property-deny"></a>[BitFlag](./class_bitflag.md) **deny**  
   
-	> *There is currently no description for this property.*
+	Denied permissions.
   
   
 ## Method Descriptions
   
-- <a name="method-PermissionOverwrite"></a>[PermissionOverwrite](./class_permissionoverwrite.md) **PermissionOverwrite** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
   

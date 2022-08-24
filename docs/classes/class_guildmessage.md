@@ -4,6 +4,10 @@
 **Inherits:** [Message](./class_message.md) < [TextChannel](./class_textchannel.md) < [TextChannel.BaseMessage](./class_textchannel.md#basemessage) < [Channel](./class_channel.md) < [MentionableEntity](./class_mentionableentity.md) < [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Represents a message sent in a guild channel within Discord.  
+  
 ## Properties
   
 | type                                                                  | name                                            |
@@ -17,19 +21,17 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                             |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [GuildMessage](./class_guildmessage.md)                                 | [GuildMessage](#method-GuildMessage) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                               | [get\_guild](#method-get-guild) **(**  **)**                                                                                          |
-| [TextChannel](./class_textchannel.md)                                   | [get\_channel](#method-get-channel) **(**  **)**                                                                                      |
-| [GuildMessage](./class_guildmessage.md)                                 | [crosspost](#method-crosspost) **(**  **)**                                                                                           |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                          |  
+| return type                             | signature                                                                                                                             |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [GuildMessage](./class_guildmessage.md) | [GuildMessage](#method-GuildMessage) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
+| [Guild](./class_guild.md)               | [get\_guild](#method-get-guild) **(**  **)**                                                                                          |
+| [GuildMessage](./class_guildmessage.md) | [crosspost](#method-crosspost) **(**  **)**                                                                                           |  
   
 ## Property Descriptions
   
 - <a name="property-guild-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **guild_id**  
   
-	> *There is currently no description for this property.*  
+	The id of the guild.  
 ________________
 
 - 	<a name="property-guild"></a>[Guild](./class_guild.md) **guild**  
@@ -38,54 +40,41 @@ ________________
 	|----------|--------------|
 	| *Getter* | get\_guild() |  
   
-	> *There is currently no description for this property.*  
+	The guild in which the message was sent.  
 ________________
 
 - <a name="property-member"></a>[Guild.Member](./class_guild.md#member) **member**  
   
-	> *There is currently no description for this property.*  
+	The guild member who sent the message.  
 ________________
 
 - <a name="property-role-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **role_mentions**  
   
-	> *There is currently no description for this property.*  
+	Roles that were mentioned in the message.  
 ________________
 
 - <a name="property-mention-everyone"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **mention_everyone**  
   
-	> *There is currently no description for this property.*  
+	Whether the message mentions everyone.  
 ________________
 
 - <a name="property-is-tts"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **is_tts**  
   
-	> *There is currently no description for this property.*
+	Wether the message is a TTS message.
   
   
 ## Method Descriptions
   
-- <a name="method-GuildMessage"></a>[GuildMessage](./class_guildmessage.md) **GuildMessage** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
 - <a name="method-get-guild"></a>[Guild](./class_guild.md) **get\_guild** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-channel"></a>[TextChannel](./class_textchannel.md) **get\_channel** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	`guild` getter.  
 ________________
 
 - <a name="method-crosspost"></a>[GuildMessage](./class_guildmessage.md) **crosspost** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	Cross-post a message in a `Guild.GuildNewsChannel` to following channels.
+	Requires the `SEND_MESSAGES` permission, if the current user sent the message,
+	or additionally the `MANAGE_MESSAGES` permission, for all other users' messages.  
 ________________
 
   

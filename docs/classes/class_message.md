@@ -5,6 +5,10 @@
   
 **Inherited By:** [GuildMessage](./class_guildmessage.md)  
   
+## Description
+  
+Represents a message sent in a channel within Discord.  
+  
 ## Properties
   
 | type                                                                    | name                                                       |
@@ -51,8 +55,7 @@
 | [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [fetch\_reactions](#method-fetch-reactions) **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)** |
 | [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [clear\_all\_reactions](#method-clear-all-reactions) **(**  **)**                                                                                                                                                                              |
 | [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [clear\_emoji\_reactions](#method-clear-emoji-reactions) **(** [Emoji](./class_emoji.md) emoji **)**                                                                                                                                           |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [delete](#method-delete) **(**  **)**                                                                                                                                                                                                          |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)   | [get\_class](#method-get-class) **(**  **)**                                                                                                                                                                                                   |  
+| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [delete](#method-delete) **(**  **)**                                                                                                                                                                                                          |  
   
 ## Constants
   
@@ -105,7 +108,7 @@
 	- **CONTEXT\_MENU\_COMMAND** = 23  
 
   
-	> *There is currently no description for this constant.*  
+	Message types.  
 ________________
 
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **Flags**  
@@ -127,14 +130,14 @@ ________________
 	- **LOADING** = 128  
 
   
-	> *There is currently no description for this constant.*
+	Message flags.
   
   
 ## Property Descriptions
   
 - <a name="property-author-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **author_id**  
   
-	> *There is currently no description for this property.*  
+	The author's id of this message.  
 ________________
 
 - 	<a name="property-author"></a>[User](./class_user.md) **author**  
@@ -143,52 +146,52 @@ ________________
 	|----------|---------------|
 	| *Getter* | get\_author() |  
   
-	> *There is currently no description for this property.*  
+	The author of this message.  
 ________________
 
 - <a name="property-timestamp"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **timestamp**  
   
-	> *There is currently no description for this property.*  
+	When this message was sent in unix time in seconds.  
 ________________
 
 - <a name="property-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **type**  
   
-	> *There is currently no description for this property.*  
+	Type of message.  
 ________________
 
 - <a name="property-content"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **content**  
   
-	> *There is currently no description for this property.*  
+	Contents of the message.  
 ________________
 
 - <a name="property-edited-timestamp"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **edited_timestamp**  
   
-	> *There is currently no description for this property.*  
+	When this message was edited (or `0` if never).  
 ________________
 
 - <a name="property-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **mentions**  
   
-	> *There is currently no description for this property.*  
+	Users mentioned in the message.  
 ________________
 
 - <a name="property-channel-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **channel_mentions**  
   
-	> *There is currently no description for this property.*  
+	Channels mentioned in this message.  
 ________________
 
 - <a name="property-attachments"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **attachments**  
   
-	> *There is currently no description for this property.*  
+	Attached files to this message.  
 ________________
 
 - <a name="property-embeds"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **embeds**  
   
-	> *There is currently no description for this property.*  
+	Embedded content.  
 ________________
 
 - <a name="property-reactions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **reactions**  
   
-	> *There is currently no description for this property.*  
+	Reactions to the message.  
 ________________
 
 - <a name="property-nonce"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **nonce**  
@@ -198,22 +201,22 @@ ________________
 
 - <a name="property-is-pinned"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **is_pinned**  
   
-	> *There is currently no description for this property.*  
+	Whether this message is pinned.  
 ________________
 
 - <a name="property-webhook-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **webhook_id**  
   
-	> *There is currently no description for this property.*  
+	Webhook's id if the message is from a webhook.  
 ________________
 
 - <a name="property-webhook"></a>[DiscordWebhook](./class_discordwebhook.md) **webhook**  
   
-	> *There is currently no description for this property.*  
+	Webhook object reference if the message is fro ma webhook.  
 ________________
 
 - <a name="property-activity"></a>[MessageActivity](./class_messageactivity.md) **activity**  
   
-	> *There is currently no description for this property.*  
+	Webhook object reference if the message is fro ma webhook.  
 ________________
 
 - <a name="property-application-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **application_id**  
@@ -267,74 +270,70 @@ ________________
   
 ## Method Descriptions
   
-- <a name="method-Message"></a>[Message](./class_message.md) **Message** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
 - <a name="method-get-author"></a>[User](./class_user.md) **get\_author** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	`author` getter.  
 ________________
 
 - <a name="method-get-referenced-message"></a>[Message](./class_message.md) **get\_referenced\_message** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	`referenced_message` getter.  
 ________________
 
 - <a name="method-edit"></a>[Message](./class_message.md) **edit** **(** [MessageEditData](./class_messageeditdata.md) message\_edit **)**  
   
-	> *There is currently no description for this method.*  
+	Edits the message, the messge author must be same bot user.  
 ________________
 
 - <a name="method-fetch-message"></a>[Message](./class_message.md) **fetch\_message** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	Fetches the message from Discord API.  
 ________________
 
 - <a name="method-fetch-referenced-message"></a>[Message](./class_message.md) **fetch\_referenced\_message** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	Fetches the referenced message if there is any from Discord API.  
 ________________
 
 - <a name="method-react"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **react** **(** [Emoji](./class_emoji.md) emoji **)**  
   
-	> *There is currently no description for this method.*  
+	Reacts to the message with `emoji`.
+	Requires bot to have `ADD_REACTIONS` permission in guild channels.  
 ________________
 
 - <a name="method-unreact"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **unreact** **(** [Emoji](./class_emoji.md) emoji **)**  
   
-	> *There is currently no description for this method.*  
+	Removes the `emoji` reaction from the message.  
 ________________
 
 - <a name="method-remove-reaction"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **remove\_reaction** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [Emoji](./class_emoji.md) emoji **)**  
   
-	> *There is currently no description for this method.*  
+	Removes a user reactions from the message.
+	Requires the bot to have `MANAGE_MESSAGES` permission.  
 ________________
 
 - <a name="method-fetch-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **fetch\_reactions** **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)**  
   
-	> *There is currently no description for this method.*  
+	Fetches the `emoji` reactions from Discord API.
+	Requires the bot to have `MANAGE_MESSAGES` permission  
 ________________
 
 - <a name="method-clear-all-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **clear\_all\_reactions** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	Removes all reactions from the message.
+	Requires the bot to have `MANAGE_MESSAGES` permission  
 ________________
 
 - <a name="method-clear-emoji-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **clear\_emoji\_reactions** **(** [Emoji](./class_emoji.md) emoji **)**  
   
-	> *There is currently no description for this method.*  
+	Removes all `emoji` reactions from the message.  
 ________________
 
 - <a name="method-delete"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **delete** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	Deletes the message if the author is the same bot user. If the message
+	is inside a guild channel, the bot must have `MANAGE_MESSAGES` permission
+	to delete other members messages.  
 ________________
 
   

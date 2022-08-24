@@ -94,13 +94,13 @@ ________________
   
 ## Properties
   
-| type                                                                                      | name                                            |
-|-------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [membership\_state](#property-membership-state) |
-| [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) | [permissions](#property-permissions)            |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [team\_id](#property-team-id)                   |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [user\_id](#property-user-id)                   |
-| [User](./class_user.md)                                                                   | [user](#property-user)                          |  
+| type                                                              | name                                            |
+|-------------------------------------------------------------------|-------------------------------------------------|
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [membership\_state](#property-membership-state) |
+| PoolStringArray                                                   | [permissions](#property-permissions)            |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [team\_id](#property-team-id)                   |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [user\_id](#property-user-id)                   |
+| [User](./class_user.md)                                           | [user](#property-user)                          |  
   
 ## Methods
   
@@ -129,7 +129,7 @@ ________________
 	> *There is currently no description for this property.*  
 ________________
 
-- <a name="property-permissions"></a>[PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) **permissions**  
+- <a name="property-permissions"></a>PoolStringArray **permissions**  
   
 	> *There is currently no description for this property.*  
 ________________

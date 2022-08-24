@@ -6,20 +6,20 @@
   
 ## Methods
   
-| return type                                                                     | signature                                                                                                                                   |
-|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [set\_nickname](#method-set-nickname) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) nickname **)**          |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [set\_roles](#method-set-roles) **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) roles **)** |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [mute](#method-mute) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**                                  |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [deafen](#method-deafen) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**                              |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [move\_to\_channel](#method-move-to-channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) channel\_id **)**      |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [timeout](#method-timeout) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) until **)**                              |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [remove\_nickname](#method-remove-nickname) **(**  **)**                                                                                    |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [clear\_roles](#method-clear-roles) **(**  **)**                                                                                            |
-| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [remove\_timeount](#method-remove-timeount) **(**  **)**                                                                                    |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)             | [has](#method-has) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) key **)**                                  |
-| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)**                                                                                                    |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)         | [get\_class](#method-get-class) **(**  **)**                                                                                                |  
+| return type                                                                     | signature                                                                                                                              |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [set\_nickname](#method-set-nickname) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) nickname **)**     |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [set\_roles](#method-set-roles) **(** PoolStringArray roles **)**                                                                      |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [mute](#method-mute) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**                             |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [deafen](#method-deafen) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**                         |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [move\_to\_channel](#method-move-to-channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) channel\_id **)** |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [timeout](#method-timeout) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) until **)**                         |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [remove\_nickname](#method-remove-nickname) **(**  **)**                                                                               |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [clear\_roles](#method-clear-roles) **(**  **)**                                                                                       |
+| [GuildMemberEditData](./class_guildmembereditdata.md)                           | [remove\_timeount](#method-remove-timeount) **(**  **)**                                                                               |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)             | [has](#method-has) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) key **)**                             |
+| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)**                                                                                               |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)         | [get\_class](#method-get-class) **(**  **)**                                                                                           |  
   
 ## Method Descriptions
   
@@ -28,7 +28,7 @@
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-set-roles"></a>[GuildMemberEditData](./class_guildmembereditdata.md) **set\_roles** **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) roles **)**  
+- <a name="method-set-roles"></a>[GuildMemberEditData](./class_guildmembereditdata.md) **set\_roles** **(** PoolStringArray roles **)**  
   
 	> *There is currently no description for this method.*  
 ________________

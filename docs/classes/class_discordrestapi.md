@@ -5,6 +5,10 @@
   
 **Inherited By:** [ApplicationRESTAPI](./class_applicationrestapi.md), [ChannelRESTAPI](./class_channelrestapi.md), [GuildRESTAPI](./class_guildrestapi.md), [InteractionRESTAPI](./class_interactionrestapi.md), [UserRESTAPI](./class_userrestapi.md), [WebhookRESTAPI](./class_webhookrestapi.md)  
   
+## Description
+  
+Abstract class for Discord REST API sub-clients.  
+  
 ## Properties
   
 | type                                                                            | name                                        |
@@ -27,42 +31,42 @@
   
 - <a name="property-token"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **token**  
   
-	> *There is currently no description for this property.*  
+	The bot token.  
 ________________
 
 - <a name="property-requester"></a>[DiscordRESTRequester](./class_discordrestrequester.md) **requester**  
   
-	> *There is currently no description for this property.*  
+	REST Requester reference.  
 ________________
 
 - <a name="property-rest-headers"></a>[Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **rest_headers**  
   
-	> *There is currently no description for this property.*  
+	Base HTTP headers passed on every request.  
 ________________
 
 - <a name="property-entity-manager"></a>[BaseDiscordEntityManager](./class_basediscordentitymanager.md) **entity_manager**  
   
-	> *There is currently no description for this property.*
+	The entity_manager for constructing and caching Discord entities.
   
   
 ## Method Descriptions
   
 - <a name="method-DiscordRESTAPI"></a>[DiscordRESTAPI](./class_discordrestapi.md) **DiscordRESTAPI** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_token, [DiscordRESTRequester](./class_discordrestrequester.md) \_requester, [BaseDiscordEntityManager](./class_basediscordentitymanager.md) \_entity\_manager **)**  
   
-	> *There is currently no description for this method.*  
+	`DiscordRESTPI` constructor.  
 ________________
 
 - <a name="method-rest-request"></a>[RestRequest](./class_restrequest.md) **rest\_request** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a `RestRequest` object for `endpoint` and pass the default headers.  
 ________________
 
 - <a name="method-rest-url"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **static** **rest\_url** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**  
   
-	> *There is currently no description for this method.*  
+	Returns the REST URL for the given `endpoint`.  
 ________________
 
 - <a name="method-cdn-url"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **static** **cdn\_url** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**  
   
-	> *There is currently no description for this method.*
+	Returns the CDN URL for the given `endpoint`.
   

@@ -6,15 +6,15 @@
   
 ## Properties
   
-| type                                                                                      | name                                      |
-|-------------------------------------------------------------------------------------------|-------------------------------------------|
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [name](#property-name)                    |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [description](#property-description)      |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [pack\_id](#property-pack-id)             |
-| [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) | [tags](#property-tags)                    |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [asset](#property-asset)                  |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [preview\_asset](#property-preview-asset) |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [format\_type](#property-format-type)     |  
+| type                                                                    | name                                      |
+|-------------------------------------------------------------------------|-------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [name](#property-name)                    |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [description](#property-description)      |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [pack\_id](#property-pack-id)             |
+| PoolStringArray                                                         | [tags](#property-tags)                    |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [asset](#property-asset)                  |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [preview\_asset](#property-preview-asset) |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [format\_type](#property-format-type)     |  
   
 ## Methods
   
@@ -54,7 +54,7 @@ ________________
 	> *There is currently no description for this property.*  
 ________________
 
-- <a name="property-tags"></a>[PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) **tags**  
+- <a name="property-tags"></a>PoolStringArray **tags**  
   
 	> *There is currently no description for this property.*  
 ________________

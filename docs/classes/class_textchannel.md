@@ -5,6 +5,10 @@
   
 **Inherited By:** [Guild.BaseGuildTextChannel](./class_guild.md#baseguildtextchannel), [Message](./class_message.md), [PrivateChannel](./class_privatechannel.md)  
   
+## Description
+  
+Represents a channel on Discord that accepts text messages.  
+  
 ## Properties
   
 | type                                                              | name                                                 |
@@ -15,22 +19,21 @@
   
 ## Methods
   
-| return type                                                               | signature                                                                                                                                                                                                                                                                                          |
-|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [TextChannel](./class_textchannel.md)                                     | [TextChannel](#method-TextChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                                                                                                                                                |
-| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)             | [send\_message](#method-send-message) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) tts=false, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) embeds=[ ] **)** |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [fetch\_messages](#method-fetch-messages) **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)**                                                                                                                                                                  |
-| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)             | [fetch\_message](#method-fetch-message) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) message\_id **)**                                                                                                                                                                  |
-| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)             | [fetch\_last\_message](#method-fetch-last-message) **(**  **)**                                                                                                                                                                                                                                    |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)       | [delete\_messages](#method-delete-messages) **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) message\_ids **)**                                                                                                                                     |
-| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)             | [get\_last\_message](#method-get-last-message) **(**  **)**                                                                                                                                                                                                                                        |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)   | [get\_class](#method-get-class) **(**  **)**                                                                                                                                                                                                                                                       |  
+| return type                                                           | signature                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [TextChannel](./class_textchannel.md)                                 | [TextChannel](#method-TextChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                                                                                                                                                                   |
+| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [send\_message](#method-send-message) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) tts=false, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) embeds=[ ] **)** <u>_coroutine_</u> |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [fetch\_messages](#method-fetch-messages) **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)** <u>_coroutine_</u>                                                                                                                                                                  |
+| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [fetch\_message](#method-fetch-message) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) message\_id **)** <u>_coroutine_</u>                                                                                                                                                                  |
+| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [fetch\_last\_message](#method-fetch-last-message) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                                                    |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [delete\_messages](#method-delete-messages) **(** PoolStringArray message\_ids **)** <u>_coroutine_</u>                                                                                                                                                                                                               |
+| [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [get\_last\_message](#method-get-last-message) **(**  **)**                                                                                                                                                                                                                                                           |  
   
 ## Property Descriptions
   
 - <a name="property-last-message-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **last_message_id**  
   
-	> *There is currently no description for this property.*  
+	The last message id in the channel.  
 ________________
 
 - 	<a name="property-last-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **last_message**  
@@ -39,54 +42,45 @@ ________________
 	|----------|----------------------|
 	| *Getter* | get\_last\_message() |  
   
-	> *There is currently no description for this property.*  
+	The last message sent in the channel.  
 ________________
 
 - <a name="property-last-pin-timestamp"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **last_pin_timestamp**  
   
-	> *There is currently no description for this property.*
+	Unix time of the last pin of a message in the channel.
   
   
 ## Method Descriptions
   
-- <a name="method-TextChannel"></a>[TextChannel](./class_textchannel.md) **TextChannel** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+- <a name="method-send-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **send\_message** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) tts=false, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) embeds=[ ] **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Sends a message to this channel.
+	`embeds` takes a list of `MessageEmbedBuilder`s  
 ________________
 
-- <a name="method-send-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **send\_message** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) tts=false, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) embeds=[ ] **)**  
+- <a name="method-fetch-messages"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **fetch\_messages** **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Fetches messages sent in this channel.  
 ________________
 
-- <a name="method-fetch-messages"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **fetch\_messages** **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)**  
+- <a name="method-fetch-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **fetch\_message** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) message\_id **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Fetches a message sent in this channel.  
 ________________
 
-- <a name="method-fetch-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **fetch\_message** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) message\_id **)**  
+- <a name="method-fetch-last-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **fetch\_last\_message** **(**  **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Fetches the last sent message in this channel.  
 ________________
 
-- <a name="method-fetch-last-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **fetch\_last\_message** **(**  **)**  
+- <a name="method-delete-messages"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **delete\_messages** **(** PoolStringArray message\_ids **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-delete-messages"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **delete\_messages** **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) message\_ids **)**  
-  
-	> *There is currently no description for this method.*  
+	Deletes a bulk of messages in this channel.  
 ________________
 
 - <a name="method-get-last-message"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **get\_last\_message** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	Gets the last message in this channel from the cache.  
 ________________
 
   
@@ -100,6 +94,10 @@ ________________
   
 **Inherits:** [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
+  
+## Description
+  
+Abstract base class of a message on Discord.  
   
 ## Properties
   
@@ -119,7 +117,7 @@ ________________
   
 - <a name="property-channel-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **channel_id**  
   
-	> *There is currently no description for this property.*  
+	Channel id of the message.  
 ________________
 
 - 	<a name="property-channel"></a>[TextChannel](./class_textchannel.md) **channel**  
@@ -128,19 +126,14 @@ ________________
 	|----------|----------------|
 	| *Getter* | get\_channel() |  
   
-	> *There is currently no description for this property.*
+	The channel the message was sent in.
   
   
 ## Method Descriptions
   
-- <a name="method-BaseMessage"></a>[TextChannel.BaseMessage](./class_textchannel.md#basemessage) **BaseMessage** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
 - <a name="method-get-channel"></a>[TextChannel](./class_textchannel.md) **get\_channel** **(**  **)**  
   
-	> *There is currently no description for this method.*  
+	`channel` getter.  
 ________________
 
   

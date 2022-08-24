@@ -23,10 +23,10 @@
 | [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [setup](#method-setup) **(**  **)**                                                                                                                                                                                                     |
 | [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [connect\_to\_gateway](#method-connect-to-gateway) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) verify\_ssl=true **)**                                                                                     |
 | void                                                                      | [disconnect\_from\_gateway](#method-disconnect-from-gateway) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) code=1000, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) reason="" **)** |
-| void                                                                      | [send\_packet](#method-send-packet) **(** [Packet](./class_packet.md) packet **)**                                                                                                                                                      |
-| void                                                                      | [add\_handler](#method-add-handler) **(** [PacketHandler](./class_packethandler.md) handler **)**                                                                                                                                       |
-| void                                                                      | [remove\_handler](#method-remove-handler) **(** [PacketHandler](./class_packethandler.md) handler **)**                                                                                                                                 |
-| void                                                                      | [dispatch\_packet](#method-dispatch-packet) **(** [DiscordPacket](./class_discordpacket.md) packet **)**                                                                                                                                |
+| void                                                                      | [send\_packet](#method-send-packet) **(** Packet packet **)**                                                                                                                                                                           |
+| void                                                                      | [add\_handler](#method-add-handler) **(** PacketHandler handler **)**                                                                                                                                                                   |
+| void                                                                      | [remove\_handler](#method-remove-handler) **(** PacketHandler handler **)**                                                                                                                                                             |
+| void                                                                      | [dispatch\_packet](#method-dispatch-packet) **(** DiscordPacket packet **)**                                                                                                                                                            |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)       | [is\_connected\_to\_gateway](#method-is-connected-to-gateway) **(**  **)**                                                                                                                                                              |
 | void                                                                      | [close](#method-close) **(**  **)**                                                                                                                                                                                                     |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)   | [get\_url](#method-get-url) **(**  **)**                                                                                                                                                                                                |
@@ -158,22 +158,22 @@ ________________
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-send-packet"></a>void **send\_packet** **(** [Packet](./class_packet.md) packet **)**  
+- <a name="method-send-packet"></a>void **send\_packet** **(** Packet packet **)**  
   
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-add-handler"></a>void **add\_handler** **(** [PacketHandler](./class_packethandler.md) handler **)**  
+- <a name="method-add-handler"></a>void **add\_handler** **(** PacketHandler handler **)**  
   
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-remove-handler"></a>void **remove\_handler** **(** [PacketHandler](./class_packethandler.md) handler **)**  
+- <a name="method-remove-handler"></a>void **remove\_handler** **(** PacketHandler handler **)**  
   
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-dispatch-packet"></a>void **dispatch\_packet** **(** [DiscordPacket](./class_discordpacket.md) packet **)**  
+- <a name="method-dispatch-packet"></a>void **dispatch\_packet** **(** DiscordPacket packet **)**  
   
 	> *There is currently no description for this method.*  
 ________________
