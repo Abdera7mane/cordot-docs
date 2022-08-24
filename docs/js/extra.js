@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-	const stylesheet = document.querySelector("link[href='css/extra.css']");
-	const parent = stylesheet.parentNode;
-	parent.removeChild(stylesheet);
-	parent.appendChild(stylesheet);
+$(document).ready(() => {
+	const stylesheet = $("link[href='css/extra.css']");
+	stylesheet.detach();
+	$("head").append(stylesheet);
 });
