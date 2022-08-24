@@ -4,6 +4,10 @@
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Discord REST API requester, uses a rate limiter to queue requests.  
+  
 ## Properties
   
 | type                                          | name                         |
@@ -12,52 +16,43 @@
   
 ## Methods
   
-| return type                                                               | signature                                                                                                                                                                      |
-|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTRequester](./class_discordrestrequester.md)                   | [DiscordRESTRequester](#method-DiscordRESTRequester) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**                           |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [request\_async](#method-request-async) **(** [RestRequest](./class_restrequest.md) request **)**                                                                              |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [cdn\_download\_async](#method-cdn-download-async) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_url **)**                                   |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)         | [get\_last\_latency\_ms](#method-get-last-latency-ms) **(**  **)**                                                                                                             |
-| void                                                                      | [print\_error](#method-print-error) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) message, [RestRequest](./class_restrequest.md) request **)** |
-| void                                                                      | [print\_error\_object](#method-print-error-object) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) object **)**                          |  
+| return type                                                                 | signature                                                                                                                                                       |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [DiscordRESTRequester](./class_discordrestrequester.md)                     | [DiscordRESTRequester](#method-DiscordRESTRequester) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**            |
+| HTTPResponse                                                                | [request\_async](#method-request-async) **(** [RestRequest](./class_restrequest.md) request **)** <u>_coroutine_</u>                                            |
+| [Resource](https://docs.godotengine.org/en/3.5/classes/class_resource.html) | [cdn\_download\_async](#method-cdn-download-async) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_url **)** <u>_coroutine_</u> |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)           | [get\_last\_latency\_ms](#method-get-last-latency-ms) **(**  **)**                                                                                              |  
   
 ## Property Descriptions
   
 - <a name="property-limiter"></a>[RESTRateLimiter](./class_restratelimiter.md) **limiter**  
   
-	> *There is currently no description for this property.*
+	Rate limiter for this requester instance.
   
   
 ## Method Descriptions
   
 - <a name="method-DiscordRESTRequester"></a>[DiscordRESTRequester](./class_discordrestrequester.md) **DiscordRESTRequester** **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**  
   
-	> *There is currently no description for this method.*  
+	Constructs a new `DiscordRESTRequester`. `use_pool` specifies whether to use
+	an HTTP connection pool (experimental unstable feature).  
 ________________
 
-- <a name="method-request-async"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **request\_async** **(** [RestRequest](./class_restrequest.md) request **)**  
+- <a name="method-request-async"></a>HTTPResponse **request\_async** **(** [RestRequest](./class_restrequest.md) request **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Sends a request to the Discord REST API asynchronously and returns an
+	`HTTPResponse` object.
+	Prints a human-readable error message in case of failure.  
 ________________
 
-- <a name="method-cdn-download-async"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **cdn\_download\_async** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_url **)**  
+- <a name="method-cdn-download-async"></a>[Resource](https://docs.godotengine.org/en/3.5/classes/class_resource.html) **cdn\_download\_async** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_url **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
+	Downloads a resource from the Discord REST API asynchronously.  
 ________________
 
 - <a name="method-get-last-latency-ms"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **get\_last\_latency\_ms** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-print-error"></a>void **print\_error** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) message, [RestRequest](./class_restrequest.md) request **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-print-error-object"></a>void **print\_error\_object** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) object **)**  
-  
-	> *There is currently no description for this method.*  
+	Gets the last request latency in milliseconds.  
 ________________
 
   

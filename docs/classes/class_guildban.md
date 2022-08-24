@@ -4,6 +4,10 @@
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Represents a ban entry in a guild.  
+  
 ## Properties
   
 | type                                                                    | name                       |
@@ -21,19 +25,14 @@
   
 - <a name="property-reason"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **reason**  
   
-	> *There is currently no description for this property.*  
+	The reason for the ban.  
 ________________
 
 - <a name="property-user"></a>[User](./class_user.md) **user**  
   
-	> *There is currently no description for this property.*
+	The banned user.
   
   
 ## Method Descriptions
   
-- <a name="method-GuildBan"></a>[GuildBan](./class_guildban.md) **GuildBan** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_reason, [User](./class_user.md) \_user **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
   

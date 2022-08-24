@@ -4,6 +4,10 @@
 **Inherits:** [PrivateChannel](./class_privatechannel.md) < [TextChannel](./class_textchannel.md) < [Channel](./class_channel.md) < [MentionableEntity](./class_mentionableentity.md) < [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Represents a group direct message channel on Discord.  
+  
 ## Properties
   
 | type                                                                    | name                              |
@@ -15,28 +19,27 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                                 |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [GroupDMChannel](./class_groupdmchannel.md)                             | [GroupDMChannel](#method-GroupDMChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [GroupDMChannel](./class_groupdmchannel.md)                             | [edit](#method-edit) **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)**                                                       |
-| [User](./class_user.md)                                                 | [get\_owner](#method-get-owner) **(**  **)**                                                                                              |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                              |  
+| return type                                 | signature                                                                                                                                 |
+|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [GroupDMChannel](./class_groupdmchannel.md) | [GroupDMChannel](#method-GroupDMChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
+| [GroupDMChannel](./class_groupdmchannel.md) | [edit](#method-edit) **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)** <u>_coroutine_</u>                                    |
+| [User](./class_user.md)                     | [get\_owner](#method-get-owner) **(**  **)**                                                                                              |  
   
 ## Property Descriptions
   
 - <a name="property-name"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **name**  
   
-	> *There is currently no description for this property.*  
+	Group name.  
 ________________
 
 - <a name="property-icon-hash"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **icon_hash**  
   
-	> *There is currently no description for this property.*  
+	The icon hash of the group channel.  
 ________________
 
 - <a name="property-owner-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **owner_id**  
   
-	> *There is currently no description for this property.*  
+	The owner id of the group channel.  
 ________________
 
 - 	<a name="property-owner"></a>[User](./class_user.md) **owner**  
@@ -45,29 +48,19 @@ ________________
 	|----------|--------------|
 	| *Getter* | get\_owner() |  
   
-	> *There is currently no description for this property.*
+	The owner of the group channel.
   
   
 ## Method Descriptions
   
-- <a name="method-GroupDMChannel"></a>[GroupDMChannel](./class_groupdmchannel.md) **GroupDMChannel** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+- <a name="method-edit"></a>[GroupDMChannel](./class_groupdmchannel.md) **edit** **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)** <u>_coroutine_</u>  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-edit"></a>[GroupDMChannel](./class_groupdmchannel.md) **edit** **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)**  
-  
-	> *There is currently no description for this method.*  
+	Updates the group channel settings.  
 ________________
 
 - <a name="method-get-owner"></a>[User](./class_user.md) **get\_owner** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	`owner` getter.  
 ________________
 
   

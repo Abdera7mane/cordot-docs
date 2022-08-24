@@ -7,7 +7,7 @@
 ## Description
   
 Reference:
- https://github.com/godot-extended-libraries/godot-next/blob/master/addons/godot-next/references/bit_flag.gd  
+https://github.com/godot-extended-libraries/godot-next/blob/master/addons/godot-next/references/bit_flag.gd  
   
 ## Properties
   
@@ -18,24 +18,24 @@ Reference:
   
 ## Methods
   
-| return type                                                                               | signature                                                                                                                     |
-|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [BitFlag](./class_bitflag.md)                                                             | [BitFlag](#method-BitFlag) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) \_enum **)** |
-| [BitFlag](./class_bitflag.md)                                                             | [put](#method-put) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                         |
-| [BitFlag](./class_bitflag.md)                                                             | [clear](#method-clear) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                     |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                       | [has](#method-has) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                         |
-| [BitFlag](./class_bitflag.md)                                                             | [toggle](#method-toggle) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                   |
-| [BitFlag](./class_bitflag.md)                                                             | [reset](#method-reset) **(**  **)**                                                                                           |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                       | [all](#method-all) **(**  **)**                                                                                               |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                       | [none](#method-none) **(**  **)**                                                                                             |
-| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html)           | [get\_enum](#method-get-enum) **(**  **)**                                                                                    |
-| [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) | [get\_keys](#method-get-keys) **(**  **)**                                                                                    |
-| [PoolIntArray](https://docs.godotengine.org/en/3.5/classes/class_poolintarray.html)       | [get\_values](#method-get-values) **(**  **)**                                                                                |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [get\_class](#method-get-class) **(**  **)**                                                                                  |
-| [BitFlag](./class_bitflag.md)                                                             | [clone](#method-clone) **(**  **)**                                                                                           |
-| [BitFlag](./class_bitflag.md)                                                             | [enable\_all](#method-enable-all) **(**  **)**                                                                                |
-| [BitFlag](./class_bitflag.md)                                                             | [disable\_all](#method-disable-all) **(**  **)**                                                                              |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                         | [size](#method-size) **(**  **)**                                                                                             |  
+| return type                                                                         | signature                                                                                                                     |
+|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [BitFlag](./class_bitflag.md)                                                       | [BitFlag](#method-BitFlag) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) \_enum **)** |
+| [BitFlag](./class_bitflag.md)                                                       | [put](#method-put) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                         |
+| [BitFlag](./class_bitflag.md)                                                       | [clear](#method-clear) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                     |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                 | [has](#method-has) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                         |
+| [BitFlag](./class_bitflag.md)                                                       | [toggle](#method-toggle) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) flag **)**                   |
+| [BitFlag](./class_bitflag.md)                                                       | [reset](#method-reset) **(**  **)**                                                                                           |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                 | [all](#method-all) **(**  **)**                                                                                               |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)                 | [none](#method-none) **(**  **)**                                                                                             |
+| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html)     | [get\_enum](#method-get-enum) **(**  **)**                                                                                    |
+| PoolStringArray                                                                     | [get\_keys](#method-get-keys) **(**  **)**                                                                                    |
+| [PoolIntArray](https://docs.godotengine.org/en/3.5/classes/class_poolintarray.html) | [get\_values](#method-get-values) **(**  **)**                                                                                |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)             | [get\_class](#method-get-class) **(**  **)**                                                                                  |
+| [BitFlag](./class_bitflag.md)                                                       | [clone](#method-clone) **(**  **)**                                                                                           |
+| [BitFlag](./class_bitflag.md)                                                       | [enable\_all](#method-enable-all) **(**  **)**                                                                                |
+| [BitFlag](./class_bitflag.md)                                                       | [disable\_all](#method-disable-all) **(**  **)**                                                                              |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)                   | [size](#method-size) **(**  **)**                                                                                             |  
   
 ## Property Descriptions
   
@@ -100,7 +100,7 @@ ________________
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-get-keys"></a>[PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) **get\_keys** **(**  **)**  
+- <a name="method-get-keys"></a>PoolStringArray **get\_keys** **(**  **)**  
   
 	> *There is currently no description for this method.*  
 ________________

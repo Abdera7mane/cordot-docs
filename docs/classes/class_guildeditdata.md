@@ -24,7 +24,7 @@
 | [GuildEditData](./class_guildeditdata.md)                                       | [set\_rules\_channel](#method-set-rules-channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)**                                     |
 | [GuildEditData](./class_guildeditdata.md)                                       | [set\_public\_updates\_channel](#method-set-public-updates-channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)**                  |
 | [GuildEditData](./class_guildeditdata.md)                                       | [set\_preferred\_locale](#method-set-preferred-locale) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) local **)**                      |
-| [GuildEditData](./class_guildeditdata.md)                                       | [set\_features](#method-set-features) **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) features **)**                  |
+| [GuildEditData](./class_guildeditdata.md)                                       | [set\_features](#method-set-features) **(** PoolStringArray features **)**                                                                                            |
 | [GuildEditData](./class_guildeditdata.md)                                       | [set\_description](#method-set-description) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) description **)**                           |
 | [GuildEditData](./class_guildeditdata.md)                                       | [enable\_premium\_progress\_bar](#method-enable-premium-progress-bar) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**           |
 | [GuildEditData](./class_guildeditdata.md)                                       | [remove\_afk\_channel](#method-remove-afk-channel) **(**  **)**                                                                                                       |
@@ -117,7 +117,7 @@ ________________
 	> *There is currently no description for this method.*  
 ________________
 
-- <a name="method-set-features"></a>[GuildEditData](./class_guildeditdata.md) **set\_features** **(** [PoolStringArray](https://docs.godotengine.org/en/3.5/classes/class_poolstringarray.html) features **)**  
+- <a name="method-set-features"></a>[GuildEditData](./class_guildeditdata.md) **set\_features** **(** PoolStringArray features **)**  
   
 	> *There is currently no description for this method.*  
 ________________
