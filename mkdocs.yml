@@ -22,6 +22,7 @@ markdown_extensions:
     - toc:
         permalink: "¶"
     - admonition
+    - pymdownx.tilde
     - pymdownx.tabbed
     - pymdownx.superfences:
         css_class: css/extra.css
