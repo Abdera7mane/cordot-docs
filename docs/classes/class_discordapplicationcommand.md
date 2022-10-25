@@ -20,12 +20,11 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                                                       |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordApplicationCommand](./class_discordapplicationcommand.md)       | [DiscordApplicationCommand](#method-DiscordApplicationCommand) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [is\_global](#method-is-global) **(**  **)**                                                                                                                    |
-| [Guild](./class_guild.md)                                               | [get\_guild](#method-get-guild) **(**  **)**                                                                                                                    |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                                                    |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [is\_global](#method-is-global) **(**  **)** |
+| [Guild](./class_guild.md)                                               | [get\_guild](#method-get-guild) **(**  **)** |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Constants
   

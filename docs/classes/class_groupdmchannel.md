@@ -19,11 +19,10 @@ Represents a group direct message channel on Discord.
   
 ## Methods
   
-| return type                                 | signature                                                                                                                                 |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [GroupDMChannel](./class_groupdmchannel.md) | [GroupDMChannel](#method-GroupDMChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [GroupDMChannel](./class_groupdmchannel.md) | [edit](#method-edit) **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)** <u>_coroutine_</u>                                    |
-| [User](./class_user.md)                     | [get\_owner](#method-get-owner) **(**  **)**                                                                                              |  
+| return type                                       | signature                                    |
+|---------------------------------------------------|----------------------------------------------|
+| [GroupDMEditAction](./class_groupdmeditaction.md) | [edit](#method-edit) **(**  **)**            |
+| [User](./class_user.md)                           | [get\_owner](#method-get-owner) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -53,7 +52,7 @@ ________________
   
 ## Method Descriptions
   
-- <a name="method-edit"></a>[GroupDMChannel](./class_groupdmchannel.md) **edit** **(** [GroupDMEditData](./class_groupdmeditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[GroupDMEditAction](./class_groupdmeditaction.md) **edit** **(**  **)**  
   
 	Updates the group channel settings.  
 ________________

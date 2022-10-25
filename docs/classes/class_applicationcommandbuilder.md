@@ -4,21 +4,23 @@
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Helper class to construct application commands data.  
+  
 ## Properties
   
-| type                                                                    | name                                                | default |
-|-------------------------------------------------------------------------|-----------------------------------------------------|---------|
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [name](#property-name)                              |         |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [description](#property-description)                |         |
-| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | [options](#property-options)                        |         |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [default\_permission](#property-default-permission) | `true`  |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [type](#property-type)                              | `1`     |  
+| type                                                                    | name                                 |
+|-------------------------------------------------------------------------|--------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [name](#property-name)               |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [description](#property-description) |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | [options](#property-options)         |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [type](#property-type)               |  
   
 ## Methods
   
 | return type                                                                           | signature                                                                                                                                                           |
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [ApplicationCommandBuilder](#method-ApplicationCommandBuilder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) command\_name **)**    |
 | [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [add\_option](#method-add-option) **(** [ApplicationCommandOptionBuilder](./class_applicationcommandoptionbuilder.md) option **)**                                  |
 | [ApplicationCommandSubCommandGroup](./class_applicationcommandsubcommandgroup.md)     | [add\_subcommand\_group](#method-add-subcommand-group) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) group\_name **)**              |
 | [ApplicationCommandSubCommand](./class_applicationcommandsubcommand.md)               | [add\_subcommand](#method-add-subcommand) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) subcommand **)**                            |
@@ -32,8 +34,10 @@
 | [ApplicationCommandNumberOption](./class_applicationcommandnumberoption.md)           | [add\_number\_option](#method-add-number-option) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**                   |
 | [ApplicationCommandAttachmentOption](./class_applicationcommandattachmentoption.md)   | [add\_attachment\_option](#method-add-attachment-option) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**           |
 | [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [with\_description](#method-with-description) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) command\_description **)**              |
-| [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [with\_default\_permission](#method-with-default-permission) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**                  |
 | [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [of\_type](#method-of-type) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) command\_type **)**                                             |
+| [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [as\_chat\_input](#method-as-chat-input) **(**  **)**                                                                                                               |
+| [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [as\_user\_command](#method-as-user-command) **(**  **)**                                                                                                           |
+| [ApplicationCommandBuilder](./class_applicationcommandbuilder.md)                     | [as\_message\_command](#method-as-message-command) **(**  **)**                                                                                                     |
 | [ApplicationCommandSubCommandGroup](./class_applicationcommandsubcommandgroup.md)     | [subcommand\_group\_builder](#method-subcommand-group-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) group\_name **)**      |
 | [ApplicationCommandSubCommand](./class_applicationcommandsubcommand.md)               | [subcommand\_builder](#method-subcommand-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) subcommand **)**                    |
 | [ApplicationCommandStringOption](./class_applicationcommandstringoption.md)           | [string\_option\_builder](#method-string-option-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**           |
@@ -45,181 +49,181 @@
 | [ApplicationCommandMentionableOption](./class_applicationcommandmentionableoption.md) | [mentionable\_option\_builder](#method-mentionable-option-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)** |
 | [ApplicationCommandNumberOption](./class_applicationcommandnumberoption.md)           | [number\_option\_builder](#method-number-option-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**           |
 | [ApplicationCommandAttachmentOption](./class_applicationcommandattachmentoption.md)   | [attachment\_option\_builder](#method-attachment-option-builder) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**   |
-| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html)       | [build](#method-build) **(**  **)**                                                                                                                                 |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)               | [get\_class](#method-get-class) **(**  **)**                                                                                                                        |  
+| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html)       | [build](#method-build) **(**  **)**                                                                                                                                 |  
   
 ## Property Descriptions
   
 - <a name="property-name"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **name**  
   
-	> *There is currently no description for this property.*  
+	Name application command.  
 ________________
 
 - <a name="property-description"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **description**  
   
-	> *There is currently no description for this property.*  
+	Description of application command.  
 ________________
 
 - <a name="property-options"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **options**  
   
-	> *There is currently no description for this property.*  
-________________
-
-- <a name="property-default-permission"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **default_permission**  
-  
-	> *There is currently no description for this property.*  
+	If building a slash command (chat input command),
+	this contains command options.  
 ________________
 
 - <a name="property-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **type**  
   
-	> *There is currently no description for this property.*
+	Type of application command.
   
   
 ## Method Descriptions
   
 - <a name="method-ApplicationCommandBuilder"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **ApplicationCommandBuilder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) command\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Constructs a builder for `command_name`.  
 ________________
 
 - <a name="method-add-option"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **add\_option** **(** [ApplicationCommandOptionBuilder](./class_applicationcommandoptionbuilder.md) option **)**  
   
-	> *There is currently no description for this method.*  
+	Adds an option to a slash command.  
 ________________
 
 - <a name="method-add-subcommand-group"></a>[ApplicationCommandSubCommandGroup](./class_applicationcommandsubcommandgroup.md) **add\_subcommand\_group** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) group\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a sub-command group.  
 ________________
 
 - <a name="method-add-subcommand"></a>[ApplicationCommandSubCommand](./class_applicationcommandsubcommand.md) **add\_subcommand** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) subcommand **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a subcommand.  
 ________________
 
 - <a name="method-add-string-option"></a>[ApplicationCommandStringOption](./class_applicationcommandstringoption.md) **add\_string\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a string option.  
 ________________
 
 - <a name="method-add-integer-option"></a>[ApplicationCommandIntegerOption](./class_applicationcommandintegeroption.md) **add\_integer\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds an integer option.  
 ________________
 
 - <a name="method-add-boolean-option"></a>[ApplicationCommandBoolOption](./class_applicationcommandbooloption.md) **add\_boolean\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a bollean option.  
 ________________
 
 - <a name="method-add-user-option"></a>[ApplicationCommandUserOption](./class_applicationcommanduseroption.md) **add\_user\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a user option.  
 ________________
 
 - <a name="method-add-channel-option"></a>[ApplicationCommandChannelOption](./class_applicationcommandchanneloption.md) **add\_channel\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds channel option.  
 ________________
 
 - <a name="method-add-role-option"></a>[ApplicationCommandRoleOption](./class_applicationcommandroleoption.md) **add\_role\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a role option.  
 ________________
 
 - <a name="method-add-mentionable-option"></a>[ApplicationCommandMentionableOption](./class_applicationcommandmentionableoption.md) **add\_mentionable\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a mentionable option.  
 ________________
 
 - <a name="method-add-number-option"></a>[ApplicationCommandNumberOption](./class_applicationcommandnumberoption.md) **add\_number\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds a number option.  
 ________________
 
 - <a name="method-add-attachment-option"></a>[ApplicationCommandAttachmentOption](./class_applicationcommandattachmentoption.md) **add\_attachment\_option** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Adds an attachment option.  
 ________________
 
 - <a name="method-with-description"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **with\_description** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) command\_description **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-with-default-permission"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **with\_default\_permission** **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) value **)**  
-  
-	> *There is currently no description for this method.*  
+	Sets the command description.  
 ________________
 
 - <a name="method-of-type"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **of\_type** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) command\_type **)**  
   
-	> *There is currently no description for this method.*  
+	Sets command's type.  
+________________
+
+- <a name="method-as-chat-input"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **as\_chat\_input** **(**  **)**  
+  
+	Sets the command's type to slash command.  
+________________
+
+- <a name="method-as-user-command"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **as\_user\_command** **(**  **)**  
+  
+	Sets the command's type to user command.  
+________________
+
+- <a name="method-as-message-command"></a>[ApplicationCommandBuilder](./class_applicationcommandbuilder.md) **as\_message\_command** **(**  **)**  
+  
+	Sets the command's type to message command.  
 ________________
 
 - <a name="method-subcommand-group-builder"></a>[ApplicationCommandSubCommandGroup](./class_applicationcommandsubcommandgroup.md) **subcommand\_group\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) group\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new sub-comand group builder  
 ________________
 
 - <a name="method-subcommand-builder"></a>[ApplicationCommandSubCommand](./class_applicationcommandsubcommand.md) **subcommand\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) subcommand **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new sub-command builder.  
 ________________
 
 - <a name="method-string-option-builder"></a>[ApplicationCommandStringOption](./class_applicationcommandstringoption.md) **string\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new string builder.  
 ________________
 
 - <a name="method-integer-option-builder"></a>[ApplicationCommandIntegerOption](./class_applicationcommandintegeroption.md) **integer\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new integer builder.  
 ________________
 
 - <a name="method-boolean-option-builder"></a>[ApplicationCommandBoolOption](./class_applicationcommandbooloption.md) **boolean\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new boolean builder.  
 ________________
 
 - <a name="method-user-option-builder"></a>[ApplicationCommandUserOption](./class_applicationcommanduseroption.md) **user\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new user builder.  
 ________________
 
 - <a name="method-channel-option-builder"></a>[ApplicationCommandChannelOption](./class_applicationcommandchanneloption.md) **channel\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new channel builder.  
 ________________
 
 - <a name="method-role-option-builder"></a>[ApplicationCommandRoleOption](./class_applicationcommandroleoption.md) **role\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new role builder.  
 ________________
 
 - <a name="method-mentionable-option-builder"></a>[ApplicationCommandMentionableOption](./class_applicationcommandmentionableoption.md) **mentionable\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new mentuinable builder.  
 ________________
 
 - <a name="method-number-option-builder"></a>[ApplicationCommandNumberOption](./class_applicationcommandnumberoption.md) **number\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new number builder.  
 ________________
 
 - <a name="method-attachment-option-builder"></a>[ApplicationCommandAttachmentOption](./class_applicationcommandattachmentoption.md) **attachment\_option\_builder** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) option\_name **)**  
   
-	> *There is currently no description for this method.*  
+	Creates a new attachment builder.  
 ________________
 
 - <a name="method-build"></a>[Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **build** **(**  **)**  
   
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
+	Builds the commands data.  
 ________________
 
   

@@ -26,11 +26,10 @@
   
 ## Methods
   
-| return type                                                                     | signature                                                                                                                                   |
-|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordActivity](./class_discordactivity.md)                                   | [DiscordActivity](#method-DiscordActivity) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)**                                                                                                    |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)         | [get\_class](#method-get-class) **(**  **)**                                                                                                |  
+| return type                                                                     | signature                                    |
+|---------------------------------------------------------------------------------|----------------------------------------------|
+| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)**     |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)         | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Constants
   

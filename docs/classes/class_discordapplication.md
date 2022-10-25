@@ -33,10 +33,9 @@ Represents an application on Discord.
   
 ## Methods
   
-| return type                                         | signature                                                                                                                                         |
-|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordApplication](./class_discordapplication.md) | [DiscordApplication](#method-DiscordApplication) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [User](./class_user.md)                             | [get\_owner](#method-get-owner) **(**  **)**                                                                                                      |  
+| return type             | signature                                    |
+|-------------------------|----------------------------------------------|
+| [User](./class_user.md) | [get\_owner](#method-get-owner) **(**  **)** |  
   
 ## Constants
   

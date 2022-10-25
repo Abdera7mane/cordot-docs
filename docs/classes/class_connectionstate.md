@@ -14,11 +14,10 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ConnectionState](./class_connectionstate.md)                           | [ConnectionState](#method-ConnectionState) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_token, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) \_intents **)** |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_uptime\_ms](#method-get-uptime-ms) **(**  **)**                                                                                                                                                               |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                                                                                                        |  
+| return type                                                             | signature                                             |
+|-------------------------------------------------------------------------|-------------------------------------------------------|
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_uptime\_ms](#method-get-uptime-ms) **(**  **)** |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**          |  
   
 ## Property Descriptions
   

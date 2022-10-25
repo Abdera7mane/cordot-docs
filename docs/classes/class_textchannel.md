@@ -3,7 +3,7 @@
   
 **Inherits:** [Channel](./class_channel.md) < [MentionableEntity](./class_mentionableentity.md) < [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
-**Inherited By:** [Guild.BaseGuildTextChannel](./class_guild.md#baseguildtextchannel), [Message](./class_message.md), [PrivateChannel](./class_privatechannel.md)  
+**Inherited By:** [Guild.BaseGuildTextChannel](./class_guild.md#baseguildtextchannel), [Guild.GuildVoiceText](./class_guild.md#guildvoicetext), [Message](./class_message.md), [PrivateChannel](./class_privatechannel.md)  
   
 ## Description
   
@@ -21,8 +21,8 @@ Represents a channel on Discord that accepts text messages.
   
 | return type                                                           | signature                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [TextChannel](./class_textchannel.md)                                 | [TextChannel](#method-TextChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                                                                                                                                                                   |
 | [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [send\_message](#method-send-message) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) tts=false, [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) embeds=[ ] **)** <u>_coroutine_</u> |
+| [MessageCreateAction](./class_messagecreateaction.md)                 | [create\_message](#method-create-message) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content="" **)**                                                                                                                                                                              |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [fetch\_messages](#method-fetch-messages) **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)** <u>_coroutine_</u>                                                                                                                                                                  |
 | [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [fetch\_message](#method-fetch-message) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) message\_id **)** <u>_coroutine_</u>                                                                                                                                                                  |
 | [TextChannel.BaseMessage](./class_textchannel.md#basemessage)         | [fetch\_last\_message](#method-fetch-last-message) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                                                    |
@@ -56,6 +56,11 @@ ________________
   
 	Sends a message to this channel.
 	`embeds` takes a list of `MessageEmbedBuilder`s  
+________________
+
+- <a name="method-create-message"></a>[MessageCreateAction](./class_messagecreateaction.md) **create\_message** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) content="" **)**  
+  
+	> *There is currently no description for this method.*  
 ________________
 
 - <a name="method-fetch-messages"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **fetch\_messages** **(** [ChannelFetchMessgesParams](./class_channelfetchmessgesparams.md) data=null **)** <u>_coroutine_</u>  
@@ -108,10 +113,9 @@ Abstract base class of a message on Discord.
   
 ## Methods
   
-| return type                                                   | signature                                                                                                                           |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [TextChannel.BaseMessage](./class_textchannel.md#basemessage) | [BaseMessage](#method-BaseMessage) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [TextChannel](./class_textchannel.md)                         | [get\_channel](#method-get-channel) **(**  **)**                                                                                    |  
+| return type                           | signature                                        |
+|---------------------------------------|--------------------------------------------------|
+| [TextChannel](./class_textchannel.md) | [get\_channel](#method-get-channel) **(**  **)** |  
   
 ## Property Descriptions
   

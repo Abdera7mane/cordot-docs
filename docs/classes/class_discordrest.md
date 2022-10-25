@@ -234,14 +234,19 @@ ________________
 	> *There is currently no description for this constant.*  
 ________________
 
-- <a name="constant-APPLICATION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **APPLICATION** = 0  
+- <a name="constant-CDN-FILE-FORMATS"></a>PoolStringArray **CDN\_FILE\_FORMATS** = [jpg, jpeg, png, webp, gif, json]  
   
-	Discord REST API types.  
+	Discord CDN file formats.  
 ________________
 
 - <a name="constant-INTERACTION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **INTERACTION** = 3  
   
 	> *There is currently no description for this constant.*  
+________________
+
+- <a name="constant-APPLICATION"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **APPLICATION** = 0  
+  
+	Discord REST API types.  
 ________________
 
 - <a name="constant-USER"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **USER** = 4  
@@ -251,10 +256,5 @@ ________________
 
 - <a name="constant-WEBHOOK"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **WEBHOOK** = 5  
   
-	> *There is currently no description for this constant.*  
-________________
-
-- <a name="constant-CDN-FILE-FORMATS"></a>PoolStringArray **CDN\_FILE\_FORMATS** = [jpg, jpeg, png, webp, gif, json]  
-  
-	Discord CDN file formats.
+	> *There is currently no description for this constant.*
   

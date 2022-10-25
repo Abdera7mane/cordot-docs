@@ -19,12 +19,6 @@ Represents a Discord voice region.
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [deprecated](#property-deprecated) |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [custom](#property-custom)         |  
   
-## Methods
-  
-| return type                                         | signature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordVoiceRegion](./class_discordvoiceregion.md) | [DiscordVoiceRegion](#method-DiscordVoiceRegion) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_id, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_name, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) \_vip, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) \_optimal, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) \_deprecated, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) \_custom **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-id"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **id**  
@@ -55,8 +49,4 @@ ________________
 - <a name="property-custom"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **custom**  
   
 	Whether the region is custom.
-  
-  
-## Method Descriptions
-  
   

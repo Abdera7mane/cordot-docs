@@ -29,10 +29,10 @@ Represents a message sent in a channel within Discord.
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [webhook\_id](#property-webhook-id)                        |
 | [DiscordWebhook](./class_discordwebhook.md)                             | [webhook](#property-webhook)                               |
 | [MessageActivity](./class_messageactivity.md)                           | [activity](#property-activity)                             |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [application\_id](#property-application-id)                |
 | [DiscordApplication](./class_discordapplication.md)                     | [application](#property-application)                       |
-| [MessageReference](./class_messagereference.md)                         | [message\_reference](#property-message-reference)          |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [application\_id](#property-application-id)                |
 | [BitFlag](./class_bitflag.md)                                           | [flags](#property-flags)                                   |
+| [MessageReference](./class_messagereference.md)                         | [message\_reference](#property-message-reference)          |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [referenced\_message\_id](#property-referenced-message-id) |
 | [Message](./class_message.md)                                           | [referenced\_message](#property-referenced-message)        |
 | [MessageInteraction](./class_messageinteraction.md)                     | [interaction](#property-interaction)                       |
@@ -41,21 +41,21 @@ Represents a message sent in a channel within Discord.
   
 ## Methods
   
-| return type                                                               | signature                                                                                                                                                                                                                                      |
-|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Message](./class_message.md)                                             | [Message](#method-Message) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                                                                                                    |
-| [User](./class_user.md)                                                   | [get\_author](#method-get-author) **(**  **)**                                                                                                                                                                                                 |
-| [Message](./class_message.md)                                             | [get\_referenced\_message](#method-get-referenced-message) **(**  **)**                                                                                                                                                                        |
-| [Message](./class_message.md)                                             | [edit](#method-edit) **(** [MessageEditData](./class_messageeditdata.md) message\_edit **)**                                                                                                                                                   |
-| [Message](./class_message.md)                                             | [fetch\_message](#method-fetch-message) **(**  **)**                                                                                                                                                                                           |
-| [Message](./class_message.md)                                             | [fetch\_referenced\_message](#method-fetch-referenced-message) **(**  **)**                                                                                                                                                                    |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [react](#method-react) **(** [Emoji](./class_emoji.md) emoji **)**                                                                                                                                                                             |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [unreact](#method-unreact) **(** [Emoji](./class_emoji.md) emoji **)**                                                                                                                                                                         |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [remove\_reaction](#method-remove-reaction) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [Emoji](./class_emoji.md) emoji **)**                                                                            |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [fetch\_reactions](#method-fetch-reactions) **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)** |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [clear\_all\_reactions](#method-clear-all-reactions) **(**  **)**                                                                                                                                                                              |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [clear\_emoji\_reactions](#method-clear-emoji-reactions) **(** [Emoji](./class_emoji.md) emoji **)**                                                                                                                                           |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [delete](#method-delete) **(**  **)**                                                                                                                                                                                                          |  
+| return type                                                           | signature                                                                                                                                                                                                                                                         |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [User](./class_user.md)                                               | [get\_author](#method-get-author) **(**  **)**                                                                                                                                                                                                                    |
+| [Message](./class_message.md)                                         | [get\_referenced\_message](#method-get-referenced-message) **(**  **)**                                                                                                                                                                                           |
+| [MessageEditAction](./class_messageeditaction.md)                     | [edit](#method-edit) **(**  **)**                                                                                                                                                                                                                                 |
+| [Message](./class_message.md)                                         | [fetch](#method-fetch) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                            |
+| [Message](./class_message.md)                                         | [fetch\_referenced\_message](#method-fetch-referenced-message) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                    |
+| [MessageCreateAction](./class_messagecreateaction.md)                 | [reply](#method-reply) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) with\_content="" **)**                                                                                                                                       |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [react](#method-react) **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>                                                                                                                                                                             |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [unreact](#method-unreact) **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>                                                                                                                                                                         |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [remove\_reaction](#method-remove-reaction) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>                                                                            |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [fetch\_reactions](#method-fetch-reactions) **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)** <u>_coroutine_</u> |
+| void                                                                  | [clear\_all\_reactions](#method-clear-all-reactions) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                              |
+| void                                                                  | [clear\_emoji\_reactions](#method-clear-emoji-reactions) **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>                                                                                                                                           |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [delete](#method-delete) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                          |  
   
 ## Constants
   
@@ -171,27 +171,27 @@ ________________
 
 - <a name="property-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **mentions**  
   
-	Users mentioned in the message.  
+	List of `User`s mentioned in the message.  
 ________________
 
 - <a name="property-channel-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **channel_mentions**  
   
-	Channels mentioned in this message.  
+	List of `ChannelMention` objects in this message.  
 ________________
 
 - <a name="property-attachments"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **attachments**  
   
-	Attached files to this message.  
+	List of `MessageAttachment` objects.  
 ________________
 
 - <a name="property-embeds"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **embeds**  
   
-	Embedded content.  
+	List of `MessageEmbed` objects.  
 ________________
 
 - <a name="property-reactions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **reactions**  
   
-	Reactions to the message.  
+	List of `MessageReaction` objects attached to the message.  
 ________________
 
 - <a name="property-nonce"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **nonce**  
@@ -216,32 +216,33 @@ ________________
 
 - <a name="property-activity"></a>[MessageActivity](./class_messageactivity.md) **activity**  
   
-	Webhook object reference if the message is fro ma webhook.  
-________________
-
-- <a name="property-application-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **application_id**  
-  
-	> *There is currently no description for this property.*  
+	Present with Rich Presence-related chat embeds.  
 ________________
 
 - <a name="property-application"></a>[DiscordApplication](./class_discordapplication.md) **application**  
   
-	> *There is currently no description for this property.*  
+	Present with Rich Presence-related chat embeds.  
 ________________
 
-- <a name="property-message-reference"></a>[MessageReference](./class_messagereference.md) **message_reference**  
+- <a name="property-application-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **application_id**  
   
-	> *There is currently no description for this property.*  
+	The id of the application, if  the message is an interaction
+	or application-owned webhook.  
 ________________
 
 - <a name="property-flags"></a>[BitFlag](./class_bitflag.md) **flags**  
   
-	> *There is currently no description for this property.*  
+	The message `Flags`.  
+________________
+
+- <a name="property-message-reference"></a>[MessageReference](./class_messagereference.md) **message_reference**  
+  
+	Contains information on the referenced message such in replies and cross posts.  
 ________________
 
 - <a name="property-referenced-message-id"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **referenced_message_id**  
   
-	> *There is currently no description for this property.*  
+	The `reference_message` id.  
 ________________
 
 - 	<a name="property-referenced-message"></a>[Message](./class_message.md) **referenced_message**  
@@ -250,7 +251,7 @@ ________________
 	|----------|----------------------------|
 	| *Getter* | get\_referenced\_message() |  
   
-	> *There is currently no description for this property.*  
+	The message associated with the `message_reference`.  
 ________________
 
 - <a name="property-interaction"></a>[MessageInteraction](./class_messageinteraction.md) **interaction**  
@@ -260,12 +261,12 @@ ________________
 
 - <a name="property-components"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **components**  
   
-	> *There is currently no description for this property.*  
+	List of `MessageComponent` objects attached to the message.  
 ________________
 
 - <a name="property-sticker-items"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **sticker_items**  
   
-	> *There is currently no description for this property.*
+	List of `MessageSticker` objects attached to the message.
   
   
 ## Method Descriptions
@@ -280,56 +281,61 @@ ________________
 	`referenced_message` getter.  
 ________________
 
-- <a name="method-edit"></a>[Message](./class_message.md) **edit** **(** [MessageEditData](./class_messageeditdata.md) message\_edit **)**  
+- <a name="method-edit"></a>[MessageEditAction](./class_messageeditaction.md) **edit** **(**  **)**  
   
 	Edits the message, the messge author must be same bot user.  
 ________________
 
-- <a name="method-fetch-message"></a>[Message](./class_message.md) **fetch\_message** **(**  **)**  
+- <a name="method-fetch"></a>[Message](./class_message.md) **fetch** **(**  **)** <u>_coroutine_</u>  
   
 	Fetches the message from Discord API.  
 ________________
 
-- <a name="method-fetch-referenced-message"></a>[Message](./class_message.md) **fetch\_referenced\_message** **(**  **)**  
+- <a name="method-fetch-referenced-message"></a>[Message](./class_message.md) **fetch\_referenced\_message** **(**  **)** <u>_coroutine_</u>  
   
 	Fetches the referenced message if there is any from Discord API.  
 ________________
 
-- <a name="method-react"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **react** **(** [Emoji](./class_emoji.md) emoji **)**  
+- <a name="method-reply"></a>[MessageCreateAction](./class_messagecreateaction.md) **reply** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) with\_content="" **)**  
+  
+	Create a reply to this message.  
+________________
+
+- <a name="method-react"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **react** **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>  
   
 	Reacts to the message with `emoji`.
 	Requires bot to have `ADD_REACTIONS` permission in guild channels.  
 ________________
 
-- <a name="method-unreact"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **unreact** **(** [Emoji](./class_emoji.md) emoji **)**  
+- <a name="method-unreact"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **unreact** **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>  
   
 	Removes the `emoji` reaction from the message.  
 ________________
 
-- <a name="method-remove-reaction"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **remove\_reaction** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [Emoji](./class_emoji.md) emoji **)**  
+- <a name="method-remove-reaction"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **remove\_reaction** **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>  
   
 	Removes a user reactions from the message.
 	Requires the bot to have `MANAGE_MESSAGES` permission.  
 ________________
 
-- <a name="method-fetch-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **fetch\_reactions** **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)**  
+- <a name="method-fetch-reactions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **fetch\_reactions** **(** [Emoji](./class_emoji.md) emoji, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=25 **)** <u>_coroutine_</u>  
   
 	Fetches the `emoji` reactions from Discord API.
 	Requires the bot to have `MANAGE_MESSAGES` permission  
 ________________
 
-- <a name="method-clear-all-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **clear\_all\_reactions** **(**  **)**  
+- <a name="method-clear-all-reactions"></a>void **clear\_all\_reactions** **(**  **)** <u>_coroutine_</u>  
   
 	Removes all reactions from the message.
 	Requires the bot to have `MANAGE_MESSAGES` permission  
 ________________
 
-- <a name="method-clear-emoji-reactions"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **clear\_emoji\_reactions** **(** [Emoji](./class_emoji.md) emoji **)**  
+- <a name="method-clear-emoji-reactions"></a>void **clear\_emoji\_reactions** **(** [Emoji](./class_emoji.md) emoji **)** <u>_coroutine_</u>  
   
 	Removes all `emoji` reactions from the message.  
 ________________
 
-- <a name="method-delete"></a>[Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) **delete** **(**  **)**  
+- <a name="method-delete"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **delete** **(**  **)** <u>_coroutine_</u>  
   
 	Deletes the message if the author is the same bot user. If the message
 	is inside a guild channel, the bot must have `MANAGE_MESSAGES` permission

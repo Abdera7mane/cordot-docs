@@ -68,7 +68,6 @@ Represents a guild on Discord also known as a server.
   
 | return type                                                               | signature                                                                                                                                                                                                                                                          |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild](./class_guild.md)                                                 | [Guild](#method-Guild) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                                                                                                                            |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)       | [has\_feature](#method-has-feature) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) feature **)**                                                                                                                                          |
 | [Channel](./class_channel.md)                                             | [get\_channel](#method-get-channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) channel\_id **)**                                                                                                                                      |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [get\_channels](#method-get-channels) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) sort=false **)**                                                                                                                                   |
@@ -95,21 +94,24 @@ Represents a guild on Discord also known as a server.
 | [Guild.GuildScheduledEvent](./class_guild.md#guildscheduledevent)         | [get\_scheduled\_event](#method-get-scheduled-event) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) event\_id **)**                                                                                                                       |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)   | [get\_icon\_url](#method-get-icon-url) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) format="png", [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) size=128 **)**                                                |
 | [Texture](https://docs.godotengine.org/en/3.5/classes/class_texture.html) | [get\_icon](#method-get-icon) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) format="png", [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) size=128 **)** <u>_coroutine_</u>                                      |
-| [Guild](./class_guild.md)                                                 | [edit](#method-edit) **(** [GuildEditData](./class_guildeditdata.md) data **)** <u>_coroutine_</u>                                                                                                                                                                 |
+| [GuildEditAction](./class_guildeditaction.md)                             | [edit](#method-edit) **(**  **)**                                                                                                                                                                                                                                  |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)       | [delete](#method-delete) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                           |
+| [Guild](./class_guild.md)                                                 | [fetch](#method-fetch) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                             |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [fetch\_channels](#method-fetch-channels) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                          |
-| [Channel](./class_channel.md)                                             | [create\_channel](#method-create-channel) **(** [ChannelCreateData](./class_channelcreatedata.md) data **)** <u>_coroutine_</u>                                                                                                                                    |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)       | [edit\_channel\_positions](#method-edit-channel-positions) **(** [ChannelPositionsEditData](./class_channelpositionseditdata.md) data **)** <u>_coroutine_</u>                                                                                                     |
+| [ChannelCategoryCreateAction](./class_channelcategorycreateaction.md)     | [create\_category](#method-create-category) **(**  **)**                                                                                                                                                                                                           |
+| [TextChannelCreateAction](./class_textchannelcreateaction.md)             | [create\_text\_channel](#method-create-text-channel) **(**  **)**                                                                                                                                                                                                  |
+| [VoiceChannelCreateAction](./class_voicechannelcreateaction.md)           | [create\_voice\_channel](#method-create-voice-channel) **(**  **)**                                                                                                                                                                                                |
+| [ChannelEditPositionsAction](./class_channeleditpositionsaction.md)       | [edit\_channel\_positions](#method-edit-channel-positions) **(**  **)**                                                                                                                                                                                            |
 | [Guild.Member](./class_guild.md#member)                                   | [fetch\_member](#method-fetch-member) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) member\_id **)** <u>_coroutine_</u>                                                                                                                  |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [fetch\_members](#method-fetch-members) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=1, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) after=0 **)** <u>_coroutine_</u>                                        |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [search\_members](#method-search-members) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) query, [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) limit=1 **)** <u>_coroutine_</u>                                  |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [add\_member](#method-add-member) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) access\_token **)** <u>_coroutine_</u>                                 |
-| [Guild.Member](./class_guild.md#member)                                   | [edit\_current\_member](#method-edit-current-member) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) nickname **)** <u>_coroutine_</u>                                                                                               |
+| [CurrentMemberEditAction](./class_currentmembereditaction.md)             | [edit\_current\_member](#method-edit-current-member) **(**  **)**                                                                                                                                                                                                  |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [fetch\_bans](#method-fetch-bans) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                  |
 | [GuildBan](./class_guildban.md)                                           | [fetch\_ban](#method-fetch-ban) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) user\_id **)** <u>_coroutine_</u>                                                                                                                          |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [fetch\_roles](#method-fetch-roles) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                                                |
-| [Guild.Role](./class_guild.md#role)                                       | [create\_role](#method-create-role) **(** [RoleCreateData](./class_rolecreatedata.md) data **)** <u>_coroutine_</u>                                                                                                                                                |
-| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [edit\_role\_positions](#method-edit-role-positions) **(** [RolePositionsEditData](./class_rolepositionseditdata.md) data **)** <u>_coroutine_</u>                                                                                                                 |
+| [RoleCreateAction](./class_rolecreateaction.md)                           | [create\_role](#method-create-role) **(**  **)**                                                                                                                                                                                                                   |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [edit\_role\_positions](#method-edit-role-positions) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                               |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)         | [fetch\_prune\_count](#method-fetch-prune-count) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) days=7, PoolStringArray role\_ids=[ ] **)** <u>_coroutine_</u>                                                                            |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)         | [begin\_prune](#method-begin-prune) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) days=7, [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) return\_count=true, PoolStringArray role\_ids=[ ] **)** <u>_coroutine_</u> |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)     | [fetch\_voice\_regions](#method-fetch-voice-regions) **(**  **)** <u>_coroutine_</u>                                                                                                                                                                               |
@@ -183,6 +185,22 @@ ________________
 	Explicit content filter options.  
 ________________
 
+- [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **VerificationLevel**  
+  
+	- **NONE** = 0  
+
+	- **LOW** = 1  
+
+	- **MEDIUM** = 2  
+
+	- **HIGH** = 3  
+
+	- **VERY\_HIGH** = 4  
+
+  
+	Verification level options.  
+________________
+
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **MFALevel**  
   
 	- **NONE** = 0  
@@ -191,6 +209,18 @@ ________________
 
   
 	MFA level options.  
+________________
+
+- [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **SystemChannelFlags**  
+  
+	- **SUPPRESS\_JOIN\_NOTIFICATIONS** = 1  
+
+	- **SUPPRESS\_PREMIUM\_SUBSCRIPTIONS** = 2  
+
+	- **SUPPRESS\_GUILD\_REMINDER\_NOTIFICATIONS** = 4  
+
+  
+	System channel flags.  
 ________________
 
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **PremiumTier**  
@@ -228,35 +258,7 @@ ________________
 	- **ONLY\_MENTIONS** = 1  
 
   
-	Notification level options.  
-________________
-
-- [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **SystemChannelFlags**  
-  
-	- **SUPPRESS\_JOIN\_NOTIFICATIONS** = 1  
-
-	- **SUPPRESS\_PREMIUM\_SUBSCRIPTIONS** = 2  
-
-	- **SUPPRESS\_GUILD\_REMINDER\_NOTIFICATIONS** = 4  
-
-  
-	System channel flags.  
-________________
-
-- [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **VerificationLevel**  
-  
-	- **NONE** = 0  
-
-	- **LOW** = 1  
-
-	- **MEDIUM** = 2  
-
-	- **HIGH** = 3  
-
-	- **VERY\_HIGH** = 4  
-
-  
-	Verification level options.
+	Notification level options.
   
   
 ## Property Descriptions
@@ -716,10 +718,9 @@ ________________
 	Downloads the icon of the guild.  
 ________________
 
-- <a name="method-edit"></a>[Guild](./class_guild.md) **edit** **(** [GuildEditData](./class_guildeditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[GuildEditAction](./class_guildeditaction.md) **edit** **(**  **)**  
   
-	Modify a guild's settings. Requires the `MANAGE_GUILD` permission.
-	Returns the updated guild object on success.  
+	Modify a guild's settings. Requires the `MANAGE_GUILD` permission.  
 ________________
 
 - <a name="method-delete"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **delete** **(**  **)** <u>_coroutine_</u>  
@@ -728,17 +729,32 @@ ________________
 	Returns `true` on success.  
 ________________
 
+- <a name="method-fetch"></a>[Guild](./class_guild.md) **fetch** **(**  **)** <u>_coroutine_</u>  
+  
+	Fethes the guild.  
+________________
+
 - <a name="method-fetch-channels"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **fetch\_channels** **(**  **)** <u>_coroutine_</u>  
   
 	Fetches the guild channels from Discord API.  
 ________________
 
-- <a name="method-create-channel"></a>[Channel](./class_channel.md) **create\_channel** **(** [ChannelCreateData](./class_channelcreatedata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-create-category"></a>[ChannelCategoryCreateAction](./class_channelcategorycreateaction.md) **create\_category** **(**  **)**  
   
-	Creates a new channel in the guild.  
+	Creates a new channel category in the guild.  
 ________________
 
-- <a name="method-edit-channel-positions"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **edit\_channel\_positions** **(** [ChannelPositionsEditData](./class_channelpositionseditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-create-text-channel"></a>[TextChannelCreateAction](./class_textchannelcreateaction.md) **create\_text\_channel** **(**  **)**  
+  
+	Creates a new text channel in the guild.  
+________________
+
+- <a name="method-create-voice-channel"></a>[VoiceChannelCreateAction](./class_voicechannelcreateaction.md) **create\_voice\_channel** **(**  **)**  
+  
+	Creates a new text channel in the guild.  
+________________
+
+- <a name="method-edit-channel-positions"></a>[ChannelEditPositionsAction](./class_channeleditpositionsaction.md) **edit\_channel\_positions** **(**  **)**  
   
 	Edits channel positions.  
 ________________
@@ -769,7 +785,7 @@ ________________
 	object.  
 ________________
 
-- <a name="method-edit-current-member"></a>[Guild.Member](./class_guild.md#member) **edit\_current\_member** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) nickname **)** <u>_coroutine_</u>  
+- <a name="method-edit-current-member"></a>[CurrentMemberEditAction](./class_currentmembereditaction.md) **edit\_current\_member** **(**  **)**  
   
 	Edits the current member in the guild.  
 ________________
@@ -789,12 +805,12 @@ ________________
 	Fetches the roles of the guild.  
 ________________
 
-- <a name="method-create-role"></a>[Guild.Role](./class_guild.md#role) **create\_role** **(** [RoleCreateData](./class_rolecreatedata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-create-role"></a>[RoleCreateAction](./class_rolecreateaction.md) **create\_role** **(**  **)**  
   
 	Creates a role in the guild.  
 ________________
 
-- <a name="method-edit-role-positions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **edit\_role\_positions** **(** [RolePositionsEditData](./class_rolepositionseditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit-role-positions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **edit\_role\_positions** **(**  **)** <u>_coroutine_</u>  
   
 	Edits role positions in the guild.  
 ________________
@@ -901,7 +917,6 @@ Represents a member of a guild.
   
 | return type                                                             | signature                                                                                                                                     |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.Member](./class_guild.md#member)                                 | [Member](#method-Member) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                     |
 | [Guild](./class_guild.md)                                               | [get\_guild](#method-get-guild) **(**  **)**                                                                                                  |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | ~~[get\_nickname\_mention](#method-get-nickname-mention) **(**  **)**~~                                                                       |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_nickname](#method-get-nickname) **(**  **)**                                                                                            |
@@ -915,7 +930,7 @@ Represents a member of a guild.
 | [BitFlag](./class_bitflag.md)                                           | [permissions\_in](#method-permissions-in) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) channel\_id **)**           |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [is\_owner](#method-is-owner) **(**  **)**                                                                                                    |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [has\_role](#method-has-role) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) role\_id **)**                          |
-| [Guild.Member](./class_guild.md#member)                                 | [edit](#method-edit) **(** [GuildMemberEditData](./class_guildmembereditdata.md) data **)** <u>_coroutine_</u>                                |
+| [GuildMemberEditAction](./class_guildmembereditaction.md)               | [edit](#method-edit) **(**  **)**                                                                                                             |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [assign\_role](#method-assign-role) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) role\_id **)** <u>_coroutine_</u> |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [revoke\_role](#method-revoke-role) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) role\_id **)** <u>_coroutine_</u> |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [kick](#method-kick) **(**  **)** <u>_coroutine_</u>                                                                                          |
@@ -1012,7 +1027,7 @@ ________________
 - <a name="property-pending"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **pending**  
   
 	Whether the user has not yet passed the guild's Membership Screening 
-	Requirements
+	Requirements.
   
   
 ## Method Descriptions
@@ -1084,7 +1099,7 @@ ________________
 	Checks if the member has the given `role_id`.  
 ________________
 
-- <a name="method-edit"></a>[Guild.Member](./class_guild.md#member) **edit** **(** [GuildMemberEditData](./class_guildmembereditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[GuildMemberEditAction](./class_guildmembereditaction.md) **edit** **(**  **)**  
   
 	Modify attributes of a guild member.  
 ________________
@@ -1164,11 +1179,10 @@ Represents a category channel on a guild. Holds a list of guild channels.
   
 ## Methods
   
-| return type                                               | signature                                                                                                                                   |
-|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.ChannelCategory](./class_guild.md#channelcategory) | [ChannelCategory](#method-ChannelCategory) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                 | [get\_guild](#method-get-guild) **(**  **)**                                                                                                |
-| [Guild.ChannelCategory](./class_guild.md#channelcategory) | [edit](#method-edit) **(** [GuildChannelEditData](./class_guildchanneleditdata.md) data **)** <u>_coroutine_</u>                            |  
+| return type                                                       | signature                                    |
+|-------------------------------------------------------------------|----------------------------------------------|
+| [Guild](./class_guild.md)                                         | [get\_guild](#method-get-guild) **(**  **)** |
+| [ChannelCategoryEditAction](./class_channelcategoryeditaction.md) | [edit](#method-edit) **(**  **)**            |  
   
 ## Property Descriptions
   
@@ -1208,9 +1222,9 @@ ________________
 	`guild` getter.  
 ________________
 
-- <a name="method-edit"></a>[Guild.ChannelCategory](./class_guild.md#channelcategory) **edit** **(** [GuildChannelEditData](./class_guildchanneleditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[ChannelCategoryEditAction](./class_channelcategoryeditaction.md) **edit** **(**  **)**  
   
-	Update a channel's settings.  
+	Updates the category's settings.  
 ________________
 
   
@@ -1239,10 +1253,9 @@ Abstract base class for guild text channel.
   
 ## Methods
   
-| return type                                                         | signature                                                                                                                                             |
-|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.BaseGuildTextChannel](./class_guild.md#baseguildtextchannel) | [BaseGuildTextChannel](#method-BaseGuildTextChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                           | [get\_guild](#method-get-guild) **(**  **)**                                                                                                          |  
+| return type               | signature                                    |
+|---------------------------|----------------------------------------------|
+| [Guild](./class_guild.md) | [get\_guild](#method-get-guild) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -1311,12 +1324,11 @@ Represents a guild text channel.
   
 ## Methods
   
-| return type                                                         | signature                                                                                                                                     |
-|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildTextChannel](./class_guild.md#guildtextchannel)         | [GuildTextChannel](#method-GuildTextChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [has\_parent](#method-has-parent) **(**  **)**                                                                                                |
-| [Guild.ChannelCategory](./class_guild.md#channelcategory)           | [get\_parent](#method-get-parent) **(**  **)**                                                                                                |
-| [Guild.GuildTextChannel](./class_guild.md#guildtextchannel)         | [edit](#method-edit) **(** [GuildTextChannelEditData](./class_guildtextchanneleditdata.md) data **)** <u>_coroutine_</u>                      |  
+| return type                                                         | signature                                      |
+|---------------------------------------------------------------------|------------------------------------------------|
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [has\_parent](#method-has-parent) **(**  **)** |
+| [Guild.ChannelCategory](./class_guild.md#channelcategory)           | [get\_parent](#method-get-parent) **(**  **)** |
+| [TextChannelEditAction](./class_textchanneleditaction.md)           | [edit](#method-edit) **(**  **)**              |  
   
 ## Property Descriptions
   
@@ -1366,9 +1378,9 @@ ________________
 	`parent` getter.  
 ________________
 
-- <a name="method-edit"></a>[Guild.GuildTextChannel](./class_guild.md#guildtextchannel) **edit** **(** [GuildTextChannelEditData](./class_guildtextchanneleditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[TextChannelEditAction](./class_textchanneleditaction.md) **edit** **(**  **)**  
   
-	Update a channel's settings.  
+	Update the hannel's settings.  
 ________________
 
   
@@ -1383,16 +1395,6 @@ ________________
 ## Description
   
 Represents a guild news channel.  
-  
-## Methods
-  
-| return type                                                 | signature                                                                                                                                     |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildNewsChannel](./class_guild.md#guildnewschannel) | [GuildNewsChannel](#method-GuildNewsChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
-## Method Descriptions
-  
-  
 ________________
   
   
@@ -1419,11 +1421,10 @@ Represents a thread channel.
   
 ## Methods
   
-| return type                                                 | signature                                                                                                                               |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.ThreadChannel](./class_guild.md#threadchannel)       | [ThreadChannel](#method-ThreadChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild.Member](./class_guild.md#member)                     | [get\_owner](#method-get-owner) **(**  **)**                                                                                            |
-| [Guild.GuildTextChannel](./class_guild.md#guildtextchannel) | [get\_parent](#method-get-parent) **(**  **)**                                                                                          |  
+| return type                                                 | signature                                      |
+|-------------------------------------------------------------|------------------------------------------------|
+| [Guild.Member](./class_guild.md#member)                     | [get\_owner](#method-get-owner) **(**  **)**   |
+| [Guild.GuildTextChannel](./class_guild.md#guildtextchannel) | [get\_parent](#method-get-parent) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -1509,10 +1510,9 @@ Contains a number of thread-specific channel data.
   
 ## Methods
   
-| return type                                             | signature                                                                                                                                 |
-|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.ThreadMetaData](./class_guild.md#threadmetadata) | [ThreadMetaData](#method-ThreadMetaData) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild.ThreadMetaData](./class_guild.md#threadmetadata) | [clone](#method-clone) **(**  **)**                                                                                                       |  
+| return type                                             | signature                           |
+|---------------------------------------------------------|-------------------------------------|
+| [Guild.ThreadMetaData](./class_guild.md#threadmetadata) | [clone](#method-clone) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -1585,11 +1585,10 @@ Represents a guild store channel.
   
 ## Methods
   
-| return type                                                   | signature                                                                                                                                       |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildStoreChannel](./class_guild.md#guildstorechannel) | [GuildStoreChannel](#method-GuildStoreChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                     | [get\_guild](#method-get-guild) **(**  **)**                                                                                                    |
-| [Guild.ChannelCategory](./class_guild.md#channelcategory)     | [get\_parent](#method-get-parent) **(**  **)**                                                                                                  |  
+| return type                                               | signature                                      |
+|-----------------------------------------------------------|------------------------------------------------|
+| [Guild](./class_guild.md)                                 | [get\_guild](#method-get-guild) **(**  **)**   |
+| [Guild.ChannelCategory](./class_guild.md#channelcategory) | [get\_parent](#method-get-parent) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -1676,12 +1675,11 @@ Abstract base class for voice guild channels.
   
 ## Methods
   
-| return type                                                           | signature                                                                                                                                               |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.BaseGuildVoiceChannel](./class_guild.md#baseguildvoicechannel) | [BaseGuildVoiceChannel](#method-BaseGuildVoiceChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                             | [get\_guild](#method-get-guild) **(**  **)**                                                                                                            |
-| [Guild.ChannelCategory](./class_guild.md#channelcategory)             | [get\_parent](#method-get-parent) **(**  **)**                                                                                                          |
-| [Guild.BaseGuildVoiceChannel](./class_guild.md#baseguildvoicechannel) | [edit](#method-edit) **(** [GuildVoiceChannelEditData](./class_guildvoicechanneleditdata.md) data **)** <u>_coroutine_</u>                              |  
+| return type                                                 | signature                                      |
+|-------------------------------------------------------------|------------------------------------------------|
+| [Guild](./class_guild.md)                                   | [get\_guild](#method-get-guild) **(**  **)**   |
+| [Guild.ChannelCategory](./class_guild.md#channelcategory)   | [get\_parent](#method-get-parent) **(**  **)** |
+| [VoiceChannelEditAction](./class_voicechanneleditaction.md) | [edit](#method-edit) **(**  **)**              |  
   
 ## Property Descriptions
   
@@ -1740,9 +1738,9 @@ ________________
 	`parent` getter.  
 ________________
 
-- <a name="method-edit"></a>[Guild.BaseGuildVoiceChannel](./class_guild.md#baseguildvoicechannel) **edit** **(** [GuildVoiceChannelEditData](./class_guildvoicechanneleditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[VoiceChannelEditAction](./class_voicechanneleditaction.md) **edit** **(**  **)**  
   
-	Update a channel's settings.  
+	Update the channel's settings.  
 ________________
 
   
@@ -1763,13 +1761,8 @@ Represents a guild voice channel.
 | type                                                              | name                                      |
 |-------------------------------------------------------------------|-------------------------------------------|
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [user\_limit](#property-user-limit)       |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [video\_quality](#property-video-quality) |  
-  
-## Methods
-  
-| return type                                                   | signature                                                                                                                                       |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) | [GuildVoiceChannel](#method-GuildVoiceChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [video\_quality](#property-video-quality) |
+| [Guild.GuildVoiceText](./class_guild.md#guildvoicetext)           | [text\_channel](#property-text-channel)   |  
   
 ## Property Descriptions
   
@@ -1781,11 +1774,52 @@ ________________
 - <a name="property-video-quality"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **video_quality**  
   
 	The camera video quality mode of the voice channel, 
-	`VoiceChannel.VideoQualityModes.AUTO` when not present.
+	`VoiceChannel.VideoQualityModes.AUTO` when not present.  
+________________
+
+- <a name="property-text-channel"></a>[Guild.GuildVoiceText](./class_guild.md#guildvoicetext) **text_channel**  
+  
+	Reference to the textual chat in the voice channel.
+  
+________________
+  
+  
+# GuildVoiceText
+  
+**Inherits:** [TextChannel](./class_textchannel.md) < [Channel](./class_channel.md) < [MentionableEntity](./class_mentionableentity.md) < [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
+  
+  
+## Description
+  
+Represents the textual chat in a guild voice channel.
+Unlike a guild text channel this does not accept threads or message pinning.  
+  
+## Properties
+  
+| type                                                          | name                       |
+|---------------------------------------------------------------|----------------------------|
+| [Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) | [parent](#property-parent) |  
+  
+## Methods
+  
+| return type                                                   | signature                                      |
+|---------------------------------------------------------------|------------------------------------------------|
+| [Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) | [get\_parent](#method-get-parent) **(**  **)** |  
+  
+## Property Descriptions
+  
+- <a name="property-parent"></a>[Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) **parent**  
+  
+	The voice channel this chat belongs to.
   
   
 ## Method Descriptions
   
+- <a name="method-get-parent"></a>[Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) **get\_parent** **(**  **)**  
+  
+	`parent` getter.  
+________________
+
   
 ________________
   
@@ -1806,12 +1840,6 @@ Represents a stage voice channel.
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [topic](#property-topic)       |
 | [Guild.StageInstance](./class_guild.md#stageinstance)                   | [instance](#property-instance) |  
   
-## Methods
-  
-| return type                                         | signature                                                                                                                             |
-|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.StageChannel](./class_guild.md#stagechannel) | [StageChannel](#method-StageChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-topic"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **topic**  
@@ -1822,10 +1850,6 @@ ________________
 - <a name="property-instance"></a>[Guild.StageInstance](./class_guild.md#stageinstance) **instance**  
   
 	Reference to the stage instance information.
-  
-  
-## Method Descriptions
-  
   
 ________________
   
@@ -1957,12 +1981,11 @@ Represents a set of permissions attached to a group of users.
   
 ## Methods
   
-| return type                                                               | signature                                                                                                             |
-|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Guild.Role](./class_guild.md#role)                                       | [Role](#method-Role) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                                 | [get\_guild](#method-get-guild) **(**  **)**                                                                          |
-| [Guild.Role](./class_guild.md#role)                                       | [edit](#method-edit) **(** [RoleEditData](./class_roleeditdata.md) data **)** <u>_coroutine_</u>                      |
-| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [delete](#method-delete) **(**  **)**                                                                                 |  
+| return type                                                               | signature                                    |
+|---------------------------------------------------------------------------|----------------------------------------------|
+| [Guild](./class_guild.md)                                                 | [get\_guild](#method-get-guild) **(**  **)** |
+| [RoleEditAction](./class_roleeditaction.md)                               | [edit](#method-edit) **(**  **)**            |
+| [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) | [delete](#method-delete) **(**  **)**        |  
   
 ## Property Descriptions
   
@@ -2027,7 +2050,7 @@ ________________
 	`guild` getter.  
 ________________
 
-- <a name="method-edit"></a>[Guild.Role](./class_guild.md#role) **edit** **(** [RoleEditData](./class_roleeditdata.md) data **)** <u>_coroutine_</u>  
+- <a name="method-edit"></a>[RoleEditAction](./class_roleeditaction.md) **edit** **(**  **)**  
   
 	Modify the role. Requires the `MANAGE_ROLES` permission.  
 ________________
@@ -2059,10 +2082,9 @@ ________________
   
 ## Methods
   
-| return type                              | signature                                                                                                             |
-|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Guild.Role.Tags](./class_guild.md#tags) | [Tags](#method-Tags) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild.Role.Tags](./class_guild.md#tags) | [duplicate](#method-duplicate) **(**  **)**                                                                           |  
+| return type                              | signature                                   |
+|------------------------------------------|---------------------------------------------|
+| [Guild.Role.Tags](./class_guild.md#tags) | [duplicate](#method-duplicate) **(**  **)** |  
   
 ## Property Descriptions
   
@@ -2117,12 +2139,11 @@ Represents a custom guild emoji.
   
 ## Methods
   
-| return type                                                           | signature                                                                                                                         |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildEmoji](./class_guild.md#guildemoji)                       | [GuildEmoji](#method-GuildEmoji) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                             | [get\_guild](#method-get-guild) **(**  **)**                                                                                      |
-| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [get\_roles](#method-get-roles) **(**  **)**                                                                                      |
-| [User](./class_user.md)                                               | [get\_user](#method-get-user) **(**  **)**                                                                                        |  
+| return type                                                           | signature                                    |
+|-----------------------------------------------------------------------|----------------------------------------------|
+| [Guild](./class_guild.md)                                             | [get\_guild](#method-get-guild) **(**  **)** |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [get\_roles](#method-get-roles) **(**  **)** |
+| [User](./class_user.md)                                               | [get\_user](#method-get-user) **(**  **)**   |  
   
 ## Property Descriptions
   
@@ -2235,13 +2256,12 @@ Represents a user's voice connection status.
   
 ## Methods
   
-| return type                                                   | signature                                                                                                                         |
-|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.VoiceState](./class_guild.md#voicestate)               | [VoiceState](#method-VoiceState) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                                     | [get\_guild](#method-get-guild) **(**  **)**                                                                                      |
-| [Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) | [get\_channel](#method-get-channel) **(**  **)**                                                                                  |
-| [User](./class_user.md)                                       | [get\_user](#method-get-user) **(**  **)**                                                                                        |
-| [Guild.Member](./class_guild.md#member)                       | [get\_member](#method-get-member) **(**  **)**                                                                                    |  
+| return type                                                   | signature                                        |
+|---------------------------------------------------------------|--------------------------------------------------|
+| [Guild](./class_guild.md)                                     | [get\_guild](#method-get-guild) **(**  **)**     |
+| [Guild.GuildVoiceChannel](./class_guild.md#guildvoicechannel) | [get\_channel](#method-get-channel) **(**  **)** |
+| [User](./class_user.md)                                       | [get\_user](#method-get-user) **(**  **)**       |
+| [Guild.Member](./class_guild.md#member)                       | [get\_member](#method-get-member) **(**  **)**   |  
   
 ## Property Descriptions
   
@@ -2388,12 +2408,6 @@ Represents an invitation to a guild.
 | [StageInstanceInvite](./class_stageinstanceinvite.md)                   | ~~[stage\_instance](#property-stage-instance)~~     |
 | [Guild.GuildScheduledEvent](./class_guild.md#guildscheduledevent)       | [scheduled\_event](#property-scheduled-event)       |  
   
-## Methods
-  
-| return type                             | signature                                                                                                                 |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [Guild.Invite](./class_guild.md#invite) | [Invite](#method-Invite) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
 ## Constants
   
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **TargetType**  
@@ -2469,10 +2483,6 @@ ________________
 	Guild scheduled event data, only included if thee is a scheduled event in
 	the channel this invite is for.
   
-  
-## Method Descriptions
-  
-  
 ________________
   
   
@@ -2503,12 +2513,6 @@ Represents a scheduled event in a guild.
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [entity\_id](#property-entity-id)             |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [entity\_type](#property-entity-type)         |
 | [Guild.ScheduledEventMetadata](./class_guild.md#scheduledeventmetadata) | [entity\_metadata](#property-entity-metadata) |  
-  
-## Methods
-  
-| return type                                                       | signature                                                                                                                                           |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.GuildScheduledEvent](./class_guild.md#guildscheduledevent) | [GuildScheduledEvent](#method-GuildScheduledEvent) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
   
 ## Constants
   
@@ -2619,10 +2623,6 @@ ________________
   
 	Additional metadata for the guild scheduled event.
   
-  
-## Method Descriptions
-  
-  
 ________________
   
   
@@ -2641,19 +2641,9 @@ Contains additional information for a guild scheduled event.
 |-------------------------------------------------------------------------|--------------------------------|
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [location](#property-location) |  
   
-## Methods
-  
-| return type                                                             | signature                                                                                                                                                 |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guild.ScheduledEventMetadata](./class_guild.md#scheduledeventmetadata) | [ScheduledEventMetadata](#method-ScheduledEventMetadata) **(** [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) \_location **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-location"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **location**  
   
 	Location of the event.
-  
-  
-## Method Descriptions
-  
   

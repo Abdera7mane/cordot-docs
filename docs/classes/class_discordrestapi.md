@@ -20,12 +20,11 @@ Abstract class for Discord REST API sub-clients.
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                                                                                                                                                                                    |
-|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTAPI](./class_discordrestapi.md)                             | [DiscordRESTAPI](#method-DiscordRESTAPI) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_token, [DiscordRESTRequester](./class_discordrestrequester.md) \_requester, [BaseDiscordEntityManager](./class_basediscordentitymanager.md) \_entity\_manager **)** |
-| [RestRequest](./class_restrequest.md)                                   | [rest\_request](#method-rest-request) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**                                                                                                                                                           |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | **static** [rest\_url](#method-rest-url) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**                                                                                                                                                        |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | **static** [cdn\_url](#method-cdn-url) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**                                                                                                                                                          |  
+| return type                                                             | signature                                                                                                                                                                                                             |
+|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [RestRequest](./class_restrequest.md)                                   | [rest\_request](#method-rest-request) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) reason="" **)** |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | **static** [rest\_url](#method-rest-url) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**                                                                                 |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | **static** [cdn\_url](#method-cdn-url) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**                                                                                   |  
   
 ## Property Descriptions
   
@@ -56,7 +55,7 @@ ________________
 	`DiscordRESTPI` constructor.  
 ________________
 
-- <a name="method-rest-request"></a>[RestRequest](./class_restrequest.md) **rest\_request** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint **)**  
+- <a name="method-rest-request"></a>[RestRequest](./class_restrequest.md) **rest\_request** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) endpoint, [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) reason="" **)**  
   
 	Creates a `RestRequest` object for `endpoint` and pass the default headers.  
 ________________

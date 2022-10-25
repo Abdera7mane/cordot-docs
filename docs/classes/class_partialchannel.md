@@ -15,11 +15,10 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                                 |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [PartialChannel](./class_partialchannel.md)                             | [PartialChannel](#method-PartialChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [is\_partial](#method-is-partial) **(**  **)**                                                                                            |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                              |  
+| return type                                                             | signature                                      |
+|-------------------------------------------------------------------------|------------------------------------------------|
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [is\_partial](#method-is-partial) **(**  **)** |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**   |  
   
 ## Property Descriptions
   

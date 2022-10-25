@@ -18,7 +18,6 @@ Discord REST API requester, uses a rate limiter to queue requests.
   
 | return type                                                                 | signature                                                                                                                                                       |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTRequester](./class_discordrestrequester.md)                     | [DiscordRESTRequester](#method-DiscordRESTRequester) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**            |
 | HTTPResponse                                                                | [request\_async](#method-request-async) **(** [RestRequest](./class_restrequest.md) request **)** <u>_coroutine_</u>                                            |
 | [Resource](https://docs.godotengine.org/en/3.5/classes/class_resource.html) | [cdn\_download\_async](#method-cdn-download-async) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_url **)** <u>_coroutine_</u> |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)           | [get\_last\_latency\_ms](#method-get-last-latency-ms) **(**  **)**                                                                                              |  

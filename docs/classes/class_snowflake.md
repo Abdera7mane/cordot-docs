@@ -12,15 +12,14 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                         |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Snowflake](./class_snowflake.md)                                       | [Snowflake](#method-Snowflake) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) \_id **)** |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_timestamp](#method-get-timestamp) **(**  **)**                                                              |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_internal\_worker\_id](#method-get-internal-worker-id) **(**  **)**                                          |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_internal\_process\_id](#method-get-internal-process-id) **(**  **)**                                        |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_increment](#method-get-increment) **(**  **)**                                                              |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                      |
-| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | **static** [snowflakes2integers](#method-snowflakes2integers) **(** PoolStringArray snowflakes **)**              |  
+| return type                                                             | signature                                                                                            |
+|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_timestamp](#method-get-timestamp) **(**  **)**                                                 |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_internal\_worker\_id](#method-get-internal-worker-id) **(**  **)**                             |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_internal\_process\_id](#method-get-internal-process-id) **(**  **)**                           |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [get\_increment](#method-get-increment) **(**  **)**                                                 |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                         |
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | **static** [snowflakes2integers](#method-snowflakes2integers) **(** PoolStringArray snowflakes **)** |  
   
 ## Constants
   

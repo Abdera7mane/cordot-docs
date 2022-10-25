@@ -6,7 +6,7 @@
   
 ## Constants
   
-- <a name="constant-CONTENT-LENGTH"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **CONTENT\_LENGTH** = "Content-Length"  
+- <a name="constant-USER-AGENT"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **USER\_AGENT** = "User-Agent"  
   
 	> *There is currently no description for this constant.*  
 ________________
@@ -21,7 +21,7 @@ ________________
 	> *There is currently no description for this constant.*  
 ________________
 
-- <a name="constant-USER-AGENT"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **USER\_AGENT** = "User-Agent"  
+- <a name="constant-CONTENT-LENGTH"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **CONTENT\_LENGTH** = "Content-Length"  
   
 	> *There is currently no description for this constant.*
   

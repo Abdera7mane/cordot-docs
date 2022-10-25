@@ -13,12 +13,6 @@
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [speaker\_count](#property-speaker-count)         |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [topic](#property-topic)                          |  
   
-## Methods
-  
-| return type                                           | signature                                                                                                                                           |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [StageInstanceInvite](./class_stageinstanceinvite.md) | [StageInstanceInvite](#method-StageInstanceInvite) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-members"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **members**  
@@ -39,8 +33,4 @@ ________________
 - <a name="property-topic"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **topic**  
   
 	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
   

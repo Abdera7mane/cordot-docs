@@ -11,10 +11,9 @@ Represents a mentionable Discord object such as `User`s and `Channel`s.
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                       |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [MentionableEntity](./class_mentionableentity.md)                       | [MentionableEntity](#method-MentionableEntity) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_mention](#method-get-mention) **(**  **)**                                                                                |  
+| return type                                                             | signature                                        |
+|-------------------------------------------------------------------------|--------------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_mention](#method-get-mention) **(**  **)** |  
   
 ## Method Descriptions
   

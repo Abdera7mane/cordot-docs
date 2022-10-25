@@ -3,7 +3,12 @@
   
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
-**Inherited By:** [MessageActionRow](./class_messageactionrow.md), [MessageButton](./class_messagebutton.md), [MessageSelectMenu](./class_messageselectmenu.md)  
+**Inherited By:** [MessageActionRow](./class_messageactionrow.md), [MessageInteractiveComponent](./class_messageinteractivecomponent.md)  
+  
+## Description
+  
+Abstract class for message components which are interactive elements
+in messages.  
   
 ## Properties
   
@@ -11,38 +16,25 @@
 |-------------------------------------------------------------------|------------------------|
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) | [type](#property-type) |  
   
-## Methods
-  
-| return type                                                             | signature                                    |
-|-------------------------------------------------------------------------|----------------------------------------------|
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
-  
 ## Constants
   
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **Type**  
   
-	- **ACTION\_ROW** = 0  
+	- **ACTION\_ROW** = 1  
 
-	- **BUTTON** = 1  
+	- **BUTTON** = 2  
 
-	- **SELECT\_MENU** = 2  
+	- **SELECT\_MENU** = 3  
+
+	- **TEXT\_IPUT** = 4  
 
   
-	> *There is currently no description for this constant.*
+	Message component types.
   
   
 ## Property Descriptions
   
 - <a name="property-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **type**  
   
-	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
+	Type of the component.
   

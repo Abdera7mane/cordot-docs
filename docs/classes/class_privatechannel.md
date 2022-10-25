@@ -20,7 +20,6 @@ Represents a private channel on Discord.
   
 | return type                                                           | signature                                                                                                                              |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [PrivateChannel](./class_privatechannel.md)                           | [PrivateChannel](#method-PrivateChannel) **(** [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) data **)**    |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) | [get\_recipients](#method-get-recipients) **(**  **)**                                                                                 |
 | [User](./class_user.md)                                               | [get\_recipient\_by\_id](#method-get-recipient-by-id) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)** |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)   | [has\_recipient](#method-has-recipient) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)**               |  

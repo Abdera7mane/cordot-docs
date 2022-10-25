@@ -16,12 +16,11 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                           |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordTeam](./class_discordteam.md)                                   | [DiscordTeam](#method-DiscordTeam) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | [get\_members](#method-get-members) **(**  **)**                                                                                    |
-| [DiscordTeam.TeamMember](./class_discordteam.md#teammember)             | [get\_owner](#method-get-owner) **(**  **)**                                                                                        |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                        |  
+| return type                                                             | signature                                        |
+|-------------------------------------------------------------------------|--------------------------------------------------|
+| [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | [get\_members](#method-get-members) **(**  **)** |
+| [DiscordTeam.TeamMember](./class_discordteam.md#teammember)             | [get\_owner](#method-get-owner) **(**  **)**     |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**     |  
   
 ## Property Descriptions
   
@@ -104,11 +103,10 @@ ________________
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                         |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordTeam.TeamMember](./class_discordteam.md#teammember)             | [TeamMember](#method-TeamMember) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [User](./class_user.md)                                                 | [get\_user](#method-get-user) **(**  **)**                                                                                        |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                      |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [User](./class_user.md)                                                 | [get\_user](#method-get-user) **(**  **)**   |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Constants
   

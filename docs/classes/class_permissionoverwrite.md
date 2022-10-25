@@ -16,12 +16,6 @@ Holds permissions of a role or member on a channel-level.
 | [BitFlag](./class_bitflag.md)                                     | [allow](#property-allow) |
 | [BitFlag](./class_bitflag.md)                                     | [deny](#property-deny)   |  
   
-## Methods
-  
-| return type                                           | signature                                                                                                                                           |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PermissionOverwrite](./class_permissionoverwrite.md) | [PermissionOverwrite](#method-PermissionOverwrite) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
 ## Constants
   
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **Type**  
@@ -49,8 +43,4 @@ ________________
 - <a name="property-deny"></a>[BitFlag](./class_bitflag.md) **deny**  
   
 	Denied permissions.
-  
-  
-## Method Descriptions
-  
   

@@ -17,14 +17,13 @@ Represents a guild or DM channel within Discord.
   
 ## Methods
   
-| return type                                                         | signature                                                                                                   |
-|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Channel](./class_channel.md)                                       | [Channel](#method-Channel) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) id **)** |
-| [Channel](./class_channel.md)                                       | [fetch](#method-fetch) **(**  **)** <u>_coroutine_</u>                                                      |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)   | [get\_creation\_timestamp](#method-get-creation-timestamp) **(**  **)**                                     |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_guild](#method-is-guild) **(**  **)**                                                                  |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_text](#method-is-text) **(**  **)**                                                                    |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_voice](#method-is-voice) **(**  **)**                                                                  |  
+| return type                                                         | signature                                                               |
+|---------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [Channel](./class_channel.md)                                       | [fetch](#method-fetch) **(**  **)** <u>_coroutine_</u>                  |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)   | [get\_creation\_timestamp](#method-get-creation-timestamp) **(**  **)** |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_guild](#method-is-guild) **(**  **)**                              |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_text](#method-is-text) **(**  **)**                                |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_voice](#method-is-voice) **(**  **)**                              |  
   
 ## Constants
   

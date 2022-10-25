@@ -6,11 +6,10 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                              |
-|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordWebSocketAdapter](./class_discordwebsocketadapter.md)           | [DiscordWebSocketAdapter](#method-DiscordWebSocketAdapter) **(** [ConnectionState](./class_connectionstate.md) connection\_state **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_url](#method-get-url) **(**  **)**                                                                                               |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                           |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_url](#method-get-url) **(**  **)**     |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Signals
   

@@ -6,10 +6,9 @@
   
 ## Methods
   
-| return type                                                             | signature                                                         |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [DiscordEntityManager](./class_discordentitymanager.md)                 | [DiscordEntityManager](#method-DiscordEntityManager) **(**  **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                      |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Method Descriptions
   

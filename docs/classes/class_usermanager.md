@@ -14,7 +14,6 @@
   
 | return type                                                                     | signature                                                                                                                                                                 |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UserManager](./class_usermanager.md)                                           | [UserManager](#method-UserManager) **(** [BaseDiscordEntityManager](./class_basediscordentitymanager.md) manager **)**                                                    |
 | [BaseDiscordEntityManager](./class_basediscordentitymanager.md)                 | [get\_manager](#method-get-manager) **(**  **)**                                                                                                                          |
 | [User](./class_user.md)                                                         | [construct\_user](#method-construct-user) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                |
 | [Presence](./class_presence.md)                                                 | [construct\_presence](#method-construct-presence) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                        |

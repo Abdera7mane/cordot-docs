@@ -4,6 +4,10 @@
 **Inherits:** [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Represents an embeded content within a message.  
+  
 ## Properties
   
 | type                                                                    | name                                 |
@@ -21,12 +25,6 @@
 | [MessageEmbedProvider](./class_messageembedprovider.md)                 | [provider](#property-provider)       |
 | [MessageEmbedAuthor](./class_messageembedauthor.md)                     | [author](#property-author)           |
 | [Array](https://docs.godotengine.org/en/3.5/classes/class_array.html)   | [fields](#property-fields)           |  
-  
-## Methods
-  
-| return type                             | signature                                                                                                                             |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [MessageEmbed](./class_messageembed.md) | [MessageEmbed](#method-MessageEmbed) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
   
 ## Constants
   
@@ -47,81 +45,72 @@
 	- **LINK** = 6  
 
   
-	> *There is currently no description for this constant.*
+	Message embed types.
   
   
 ## Property Descriptions
   
 - <a name="property-title"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **title**  
   
-	> *There is currently no description for this property.*  
+	Title of embed.  
 ________________
 
 - <a name="property-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **type**  
   
-	> *There is currently no description for this property.*  
+	Type of embed.  
 ________________
 
 - <a name="property-description"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **description**  
   
-	> *There is currently no description for this property.*  
+	Description of embed  
 ________________
 
 - <a name="property-url"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **url**  
   
-	> *There is currently no description for this property.*  
+	Url of embed.  
 ________________
 
 - <a name="property-timestamp"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **timestamp**  
   
-	> *There is currently no description for this property.*  
+	Unix timestamp of embed content.  
 ________________
 
 - <a name="property-color"></a>[Color](https://docs.godotengine.org/en/3.5/classes/class_color.html) **color**  
   
-	> *There is currently no description for this property.*  
+	Color of embed.  
 ________________
 
 - <a name="property-footer"></a>[MessageEmbedFooter](./class_messageembedfooter.md) **footer**  
   
-	> *There is currently no description for this property.*  
+	Footer information.  
 ________________
 
 - <a name="property-image"></a>[MessageEmbedImage](./class_messageembedimage.md) **image**  
   
-	> *There is currently no description for this property.*  
+	Image information.  
 ________________
 
 - <a name="property-thumbnail"></a>[MessageEmbedThumbnail](./class_messageembedthumbnail.md) **thumbnail**  
   
-	> *There is currently no description for this property.*  
+	Tumbnail information.  
 ________________
 
 - <a name="property-video"></a>[MessageEmbedVideo](./class_messageembedvideo.md) **video**  
   
-	> *There is currently no description for this property.*  
+	Video information.  
 ________________
 
 - <a name="property-provider"></a>[MessageEmbedProvider](./class_messageembedprovider.md) **provider**  
   
-	> *There is currently no description for this property.*  
+	Provider information.  
 ________________
 
 - <a name="property-author"></a>[MessageEmbedAuthor](./class_messageembedauthor.md) **author**  
   
-	> *There is currently no description for this property.*  
+	Author information.  
 ________________
 
 - <a name="property-fields"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **fields**  
   
-	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
-- <a name="method-MessageEmbed"></a>[MessageEmbed](./class_messageembed.md) **MessageEmbed** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
+	List of `MessageEmbedField`s.
   

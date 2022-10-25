@@ -14,7 +14,6 @@
   
 | return type                                                                     | signature                                                                                                                                                                         |
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MessageManager](./class_messagemanager.md)                                     | [MessageManager](#method-MessageManager) **(** [BaseDiscordEntityManager](./class_basediscordentitymanager.md) manager **)**                                                      |
 | [BaseDiscordEntityManager](./class_basediscordentitymanager.md)                 | [get\_manager](#method-get-manager) **(**  **)**                                                                                                                                  |
 | [Message](./class_message.md)                                                   | [construct\_message](#method-construct-message) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                  |
 | [MessageEmbed](./class_messageembed.md)                                         | [construct\_embed](#method-construct-embed) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                      |
@@ -29,6 +28,11 @@
 | [MessageReference](./class_messagereference.md)                                 | [construct\_message\_reference](#method-construct-message-reference) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**             |
 | [ChannelMention](./class_channelmention.md)                                     | [construct\_channel\_mention](#method-construct-channel-mention) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                 |
 | [MessageReaction](./class_messagereaction.md)                                   | [construct\_reaction](#method-construct-reaction) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                |
+| [MessageActionRow](./class_messageactionrow.md)                                 | [construct\_action\_row](#method-construct-action-row) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                           |
+| [MessageButton](./class_messagebutton.md)                                       | [construct\_button](#method-construct-button) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                                    |
+| [MessageSelectMenu](./class_messageselectmenu.md)                               | [construct\_select\_menu](#method-construct-select-menu) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                         |
+| [MessageSelectOption](./class_messageselectoption.md)                           | [construct\_select\_option](#method-construct-select-option) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                     |
+| [MessageTextInput](./class_messagetextinput.md)                                 | [construct\_text\_input](#method-construct-text-input) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                           |
 | void                                                                            | [update\_message](#method-update-message) **(** [Message](./class_message.md) message, [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
 | [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [parse\_message\_data](#method-parse-message-data) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**                               |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)         | [get\_class](#method-get-class) **(**  **)**                                                                                                                                      |
@@ -114,6 +118,31 @@ ________________
 ________________
 
 - <a name="method-construct-reaction"></a>[MessageReaction](./class_messagereaction.md) **construct\_reaction** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+  
+	> *There is currently no description for this method.*  
+________________
+
+- <a name="method-construct-action-row"></a>[MessageActionRow](./class_messageactionrow.md) **construct\_action\_row** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+  
+	> *There is currently no description for this method.*  
+________________
+
+- <a name="method-construct-button"></a>[MessageButton](./class_messagebutton.md) **construct\_button** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+  
+	> *There is currently no description for this method.*  
+________________
+
+- <a name="method-construct-select-menu"></a>[MessageSelectMenu](./class_messageselectmenu.md) **construct\_select\_menu** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+  
+	> *There is currently no description for this method.*  
+________________
+
+- <a name="method-construct-select-option"></a>[MessageSelectOption](./class_messageselectoption.md) **construct\_select\_option** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
+  
+	> *There is currently no description for this method.*  
+________________
+
+- <a name="method-construct-text-input"></a>[MessageTextInput](./class_messagetextinput.md) **construct\_text\_input** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
   
 	> *There is currently no description for this method.*  
 ________________
