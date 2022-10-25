@@ -25,12 +25,11 @@
   
 ## Methods
   
-| return type                                 | signature                                                                                                                                 |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordWebhook](./class_discordwebhook.md) | [DiscordWebhook](#method-DiscordWebhook) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)                   | [get\_guild](#method-get-guild) **(**  **)**                                                                                              |
-| [Channel](./class_channel.md)               | [get\_channel](#method-get-channel) **(**  **)**                                                                                          |
-| [User](./class_user.md)                     | [get\_user](#method-get-user) **(**  **)**                                                                                                |  
+| return type                   | signature                                        |
+|-------------------------------|--------------------------------------------------|
+| [Guild](./class_guild.md)     | [get\_guild](#method-get-guild) **(**  **)**     |
+| [Channel](./class_channel.md) | [get\_channel](#method-get-channel) **(**  **)** |
+| [User](./class_user.md)       | [get\_user](#method-get-user) **(**  **)**       |  
   
 ## Constants
   

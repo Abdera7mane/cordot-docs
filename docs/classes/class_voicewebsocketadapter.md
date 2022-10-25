@@ -6,10 +6,9 @@
   
 ## Methods
   
-| return type                                                             | signature                                                           |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [VoiceWebSocketAdapter](./class_voicewebsocketadapter.md)               | [VoiceWebSocketAdapter](#method-VoiceWebSocketAdapter) **(**  **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                        |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Constants
   

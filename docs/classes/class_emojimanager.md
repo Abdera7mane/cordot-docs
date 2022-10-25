@@ -14,7 +14,6 @@
   
 | return type                                                             | signature                                                                                                                                    |
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [EmojiManager](./class_emojimanager.md)                                 | [EmojiManager](#method-EmojiManager) **(** [BaseDiscordEntityManager](./class_basediscordentitymanager.md) manager **)**                     |
 | [BaseDiscordEntityManager](./class_basediscordentitymanager.md)         | [get\_manager](#method-get-manager) **(**  **)**                                                                                             |
 | [Emoji](./class_emoji.md)                                               | [construct\_emoji](#method-construct-emoji) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                                 |  

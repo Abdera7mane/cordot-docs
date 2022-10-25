@@ -13,10 +13,9 @@
   
 ## Methods
   
-| return type                                                                               | signature                                                                                                                                                                                                                                                            |
-|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordApplicationCommandOptionChoice](./class_discordapplicationcommandoptionchoice.md) | [DiscordApplicationCommandOptionChoice](#method-DiscordApplicationCommandOptionChoice) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) \_name, [Variant](https://docs.godotengine.org/en/3.5/classes/class_variant.html) \_value **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html)                   | [get\_class](#method-get-class) **(**  **)**                                                                                                                                                                                                                         |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Property Descriptions
   

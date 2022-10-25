@@ -11,9 +11,37 @@ client.
   
 ## Constants
   
-- <a name="constant-UNPRIVILEGED"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **UNPRIVILEGED** = 32509  
+- <a name="constant-GUILD-MEMBERS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_MEMBERS** = 2  
   
-	Unprivileged intents.  
+	Enabled events:
+	- `member_joined`
+	- `guild_member_updated`
+	- `member_left`
+	- `thread_members_update`  
+________________
+
+- <a name="constant-GUILD-MESSAGES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_MESSAGES** = 512  
+  
+	Enabled events:
+	- `message_sent` 
+	- `message_updated`
+	- `message_deleted`
+	- `message_bulk_deleted`  
+________________
+
+- <a name="constant-DIRECT-MESSAGES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **DIRECT\_MESSAGES** = 4096  
+  
+	Enabled events:
+	- `message_sent` 
+	- `message_updated`
+	- `message_deleted`
+	- `channel_pins_updated`  
+________________
+
+- <a name="constant-GUILD-PRESENCES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_PRESENCES** = 256  
+  
+	Enabled events:
+	- `presence_updated`  
 ________________
 
 - <a name="constant-GUILDS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILDS** = 1  
@@ -40,20 +68,23 @@ ________________
 	- `stage_instance_deleted`  
 ________________
 
-- <a name="constant-GUILD-MEMBERS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_MEMBERS** = 2  
-  
-	Enabled events:
-	- `member_joined`
-	- `guild_member_updated`
-	- `member_left`
-	- `thread_members_update`  
-________________
-
 - <a name="constant-GUILD-BANS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_BANS** = 4  
   
 	Enabled events:
 	- `guild_ban_added`
 	- `guild_ban_removed`  
+________________
+
+- <a name="constant-GUILD-INVITES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_INVITES** = 64  
+  
+	Enabled events:
+	- `invite_created`
+	- `invite_deleted`  
+________________
+
+- <a name="constant-UNPRIVILEGED"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **UNPRIVILEGED** = 32509  
+  
+	Unprivileged intents.  
 ________________
 
 - <a name="constant-GUILD-EMOJIS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_EMOJIS** = 8  
@@ -78,32 +109,10 @@ ________________
 	- `webhooks_updated`  
 ________________
 
-- <a name="constant-GUILD-INVITES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_INVITES** = 64  
-  
-	Enabled events:
-	- `invite_created`
-	- `invite_deleted`  
-________________
-
 - <a name="constant-GUILD-VOICE-STATES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_VOICE\_STATES** = 128  
   
 	Enabled events:
 	- `voice_state_updated`  
-________________
-
-- <a name="constant-GUILD-PRESENCES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_PRESENCES** = 256  
-  
-	Enabled events:
-	- `presence_updated`  
-________________
-
-- <a name="constant-GUILD-MESSAGES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_MESSAGES** = 512  
-  
-	Enabled events:
-	- `message_sent` 
-	- `message_updated`
-	- `message_deleted`
-	- `message_bulk_deleted`  
 ________________
 
 - <a name="constant-GUILD-MESSAGE-REACTIONS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **GUILD\_MESSAGE\_REACTIONS** = 1024  
@@ -119,15 +128,6 @@ ________________
   
 	Enabled events:
 	- `typing_started`  
-________________
-
-- <a name="constant-DIRECT-MESSAGES"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **DIRECT\_MESSAGES** = 4096  
-  
-	Enabled events:
-	- `message_sent` 
-	- `message_updated`
-	- `message_deleted`
-	- `channel_pins_updated`  
 ________________
 
 - <a name="constant-DIRECT-MESSAGE-REACTIONS"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **DIRECT\_MESSAGE\_REACTIONS** = 8192  

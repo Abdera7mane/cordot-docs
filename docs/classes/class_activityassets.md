@@ -15,10 +15,9 @@
   
 ## Methods
   
-| return type                                                                     | signature                                                                                                                                 |
-|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [ActivityAssets](./class_activityassets.md)                                     | [ActivityAssets](#method-ActivityAssets) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)**                                                                                                  |  
+| return type                                                                     | signature                                |
+|---------------------------------------------------------------------------------|------------------------------------------|
+| [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) | [to\_dict](#method-to-dict) **(**  **)** |  
   
 ## Property Descriptions
   

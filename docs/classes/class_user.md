@@ -25,14 +25,13 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                             |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [User](./class_user.md)                                                 | [User](#method-User) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_tag](#method-get-tag) **(**  **)**                                                                              |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_mention](#method-get-mention) **(**  **)**                                                                      |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_nickname\_mention](#method-get-nickname-mention) **(**  **)**                                                   |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [join\_date\_timestamp](#method-join-date-timestamp) **(**  **)**                                                     |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                          |  
+| return type                                                             | signature                                                           |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_tag](#method-get-tag) **(**  **)**                            |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_mention](#method-get-mention) **(**  **)**                    |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_nickname\_mention](#method-get-nickname-mention) **(**  **)** |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [join\_date\_timestamp](#method-join-date-timestamp) **(**  **)**   |
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                        |  
   
 ## Constants
   

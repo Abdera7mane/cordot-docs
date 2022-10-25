@@ -21,10 +21,9 @@ catches some of the most common rate limits, and needs more testing.
   
 ## Methods
   
-| return type                                   | signature                                                                                                                                  |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [RESTRateLimiter](./class_restratelimiter.md) | [RESTRateLimiter](#method-RESTRateLimiter) **(** [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)** |
-| HTTPResponse                                  | [queue\_request](#method-queue-request) **(** [RestRequest](./class_restrequest.md) request **)** <u>_coroutine_</u>                       |  
+| return type  | signature                                                                                                            |
+|--------------|----------------------------------------------------------------------------------------------------------------------|
+| HTTPResponse | [queue\_request](#method-queue-request) **(** [RestRequest](./class_restrequest.md) request **)** <u>_coroutine_</u> |  
   
 ## Constants
   

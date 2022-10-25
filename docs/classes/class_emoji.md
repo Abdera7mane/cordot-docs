@@ -17,10 +17,9 @@ Abstract Discord emoji.
   
 ## Methods
   
-| return type                                                             | signature                                                                                                               |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Emoji](./class_emoji.md)                                               | [Emoji](#method-Emoji) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [url\_encoded](#method-url-encoded) **(**  **)**                                                                        |  
+| return type                                                             | signature                                        |
+|-------------------------------------------------------------------------|--------------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [url\_encoded](#method-url-encoded) **(**  **)** |  
   
 ## Property Descriptions
   

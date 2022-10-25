@@ -13,10 +13,9 @@
   
 ## Methods
   
-| return type                                                             | signature                                                                                                                             |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [VoiceChannel](./class_voicechannel.md)                                 | [VoiceChannel](#method-VoiceChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                          |  
+| return type                                                             | signature                                    |
+|-------------------------------------------------------------------------|----------------------------------------------|
+| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)** |  
   
 ## Constants
   

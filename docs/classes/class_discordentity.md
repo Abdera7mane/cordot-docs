@@ -18,13 +18,12 @@ Abstract class for Discord API objects.
   
 ## Methods
   
-| return type                                                         | signature                                                                                                                 |
-|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [DiscordEntity](./class_discordentity.md)                           | [DiscordEntity](#method-DiscordEntity) **(** [int](https://docs.godotengine.org/en/3.5/classes/class_int.html) \_id **)** |
-| [DiscordEntity](./class_discordentity.md)                           | [clone](#method-clone) **(**  **)**                                                                                       |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [equals](#method-equals) **(** [DiscordEntity](./class_discordentity.md) entity **)**                                     |
-| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_partial](#method-is-partial) **(**  **)**                                                                            |
-| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)   | [get\_id](#method-get-id) **(**  **)**                                                                                    |  
+| return type                                                         | signature                                                                             |
+|---------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [DiscordEntity](./class_discordentity.md)                           | [clone](#method-clone) **(**  **)**                                                   |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [equals](#method-equals) **(** [DiscordEntity](./class_discordentity.md) entity **)** |
+| [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) | [is\_partial](#method-is-partial) **(**  **)**                                        |
+| [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)   | [get\_id](#method-get-id) **(**  **)**                                                |  
   
 ## Constants
   

@@ -4,6 +4,10 @@
 **Inherits:** [DiscordEntity](./class_discordentity.md) < [Reference](https://docs.godotengine.org/en/3.5/classes/class_reference.html) < [Object](https://docs.godotengine.org/en/3.5/classes/class_object.html)  
   
   
+## Description
+  
+Represents a resource such as a file or image attached to a message.  
+  
 ## Properties
   
 | type                                                                    | name                                    |
@@ -18,64 +22,49 @@
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [width](#property-width)                |
 | [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html)     | [ephemeral](#property-ephemeral)        |  
   
-## Methods
-  
-| return type                                       | signature                                                                                                                                       |
-|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MessageAttachment](./class_messageattachment.md) | [MessageAttachment](#method-MessageAttachment) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-filename"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **filename**  
   
-	> *There is currently no description for this property.*  
+	Name of the attached file.  
 ________________
 
 - <a name="property-description"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **description**  
   
-	> *There is currently no description for this property.*  
+	Description for the file.  
 ________________
 
 - <a name="property-content-type"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **content_type**  
   
-	> *There is currently no description for this property.*  
+	The attachment's [media type](https://en.wikipedia.org/wiki/Media_type).  
 ________________
 
 - <a name="property-size"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **size**  
   
-	> *There is currently no description for this property.*  
+	Size of file in bytes.  
 ________________
 
 - <a name="property-url"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **url**  
   
-	> *There is currently no description for this property.*  
+	Source url of file.  
 ________________
 
 - <a name="property-proxy-url"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **proxy_url**  
   
-	> *There is currently no description for this property.*  
+	A proxied url of file.  
 ________________
 
 - <a name="property-height"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **height**  
   
-	> *There is currently no description for this property.*  
+	Height of file (if image).  
 ________________
 
 - <a name="property-width"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **width**  
   
-	> *There is currently no description for this property.*  
+	Width of file (if image).  
 ________________
 
 - <a name="property-ephemeral"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **ephemeral**  
   
-	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
-- <a name="method-MessageAttachment"></a>[MessageAttachment](./class_messageattachment.md) **MessageAttachment** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
+	Whether this attachment is ephemeral.
   

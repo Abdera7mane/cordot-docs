@@ -10,10 +10,9 @@ Represents a direct message channel between two users.
   
 ## Methods
   
-| return type                       | signature                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [DMChannel](./class_dmchannel.md) | [DMChannel](#method-DMChannel) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [User](./class_user.md)           | [get\_recipient](#method-get-recipient) **(**  **)**                                                                            |  
+| return type             | signature                                            |
+|-------------------------|------------------------------------------------------|
+| [User](./class_user.md) | [get\_recipient](#method-get-recipient) **(**  **)** |  
   
 ## Method Descriptions
   

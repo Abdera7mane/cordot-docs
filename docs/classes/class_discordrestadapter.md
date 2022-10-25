@@ -21,12 +21,6 @@ Standalone Discord REST API client.
 | [UserRESTAPI](./class_userrestapi.md)                   | [user](#property-user)               |
 | [WebhookRESTAPI](./class_webhookrestapi.md)             | [webhook](#property-webhook)         |  
   
-## Methods
-  
-| return type                                         | signature                                                                                                                                                                                                                                                                                                                           |
-|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DiscordRESTAdapter](./class_discordrestadapter.md) | [DiscordRESTAdapter](#method-DiscordRESTAdapter) **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [DiscordEntityManager](./class_discordentitymanager.md) entity\_manager=DiscordEntityManager.new(), [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)** |  
-  
 ## Property Descriptions
   
 - <a name="property-requester"></a>[DiscordRESTRequester](./class_discordrestrequester.md) **requester**  
@@ -67,17 +61,6 @@ ________________
 - <a name="property-webhook"></a>[WebhookRESTAPI](./class_webhookrestapi.md) **webhook**  
   
 	Webhook REST API client.
-  
-  
-## Method Descriptions
-  
-- <a name="method-DiscordRESTAdapter"></a>[DiscordRESTAdapter](./class_discordrestadapter.md) **DiscordRESTAdapter** **(** [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) token, [DiscordEntityManager](./class_discordentitymanager.md) entity\_manager=DiscordEntityManager.new(), [bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) use\_pool=false **)**  
-  
-	Constructs a new `DiscordRESTAdapter` with a bot `token`. You can optionally
-	pass an `entity_manager` for different caching settings. `use_pool` enables
-	the use of a HTTP connection pool (experimental unstable feature).  
-________________
-
   
   
 ## Sub Classes

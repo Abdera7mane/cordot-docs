@@ -21,11 +21,10 @@ Represents a message sent in a guild channel within Discord.
   
 ## Methods
   
-| return type                             | signature                                                                                                                             |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [GuildMessage](./class_guildmessage.md) | [GuildMessage](#method-GuildMessage) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [Guild](./class_guild.md)               | [get\_guild](#method-get-guild) **(**  **)**                                                                                          |
-| [GuildMessage](./class_guildmessage.md) | [crosspost](#method-crosspost) **(**  **)**                                                                                           |  
+| return type                             | signature                                                      |
+|-----------------------------------------|----------------------------------------------------------------|
+| [Guild](./class_guild.md)               | [get\_guild](#method-get-guild) **(**  **)**                   |
+| [GuildMessage](./class_guildmessage.md) | [crosspost](#method-crosspost) **(**  **)** <u>_coroutine_</u> |  
   
 ## Property Descriptions
   
@@ -50,7 +49,7 @@ ________________
 
 - <a name="property-role-mentions"></a>[Array](https://docs.godotengine.org/en/3.5/classes/class_array.html) **role_mentions**  
   
-	Roles that were mentioned in the message.  
+	List of `Guild.Role`s mentioned in the message.  
 ________________
 
 - <a name="property-mention-everyone"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **mention_everyone**  
@@ -60,7 +59,7 @@ ________________
 
 - <a name="property-is-tts"></a>[bool](https://docs.godotengine.org/en/3.5/classes/class_bool.html) **is_tts**  
   
-	Wether the message is a TTS message.
+	Whether the message is a TTS message.
   
   
 ## Method Descriptions
@@ -70,7 +69,7 @@ ________________
 	`guild` getter.  
 ________________
 
-- <a name="method-crosspost"></a>[GuildMessage](./class_guildmessage.md) **crosspost** **(**  **)**  
+- <a name="method-crosspost"></a>[GuildMessage](./class_guildmessage.md) **crosspost** **(**  **)** <u>_coroutine_</u>  
   
 	Cross-post a message in a `Guild.GuildNewsChannel` to following channels.
 	Requires the `SEND_MESSAGES` permission, if the current user sent the message,

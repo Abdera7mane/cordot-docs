@@ -16,13 +16,6 @@
 | [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [preview\_asset](#property-preview-asset) |
 | [int](https://docs.godotengine.org/en/3.5/classes/class_int.html)       | [format\_type](#property-format-type)     |  
   
-## Methods
-  
-| return type                                                             | signature                                                                                                                                 |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [MessageSticker](./class_messagesticker.md)                             | [MessageSticker](#method-MessageSticker) **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)** |
-| [String](https://docs.godotengine.org/en/3.5/classes/class_string.html) | [get\_class](#method-get-class) **(**  **)**                                                                                              |  
-  
 ## Constants
   
 - [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) **Format**  
@@ -72,18 +65,4 @@ ________________
 - <a name="property-format-type"></a>[int](https://docs.godotengine.org/en/3.5/classes/class_int.html) **format_type**  
   
 	> *There is currently no description for this property.*
-  
-  
-## Method Descriptions
-  
-- <a name="method-MessageSticker"></a>[MessageSticker](./class_messagesticker.md) **MessageSticker** **(** [Dictionary](https://docs.godotengine.org/en/3.5/classes/class_dictionary.html) data **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
-- <a name="method-get-class"></a>[String](https://docs.godotengine.org/en/3.5/classes/class_string.html) **get\_class** **(**  **)**  
-  
-	> *There is currently no description for this method.*  
-________________
-
   
