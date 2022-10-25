@@ -32,10 +32,11 @@ jobs:
       - name: Generate class reference Makrdown
         run: |
           touch project.godot
-          timeout 15s godot --editor || true
+          timeout 10s godot --editor || true
           godot --editor --script doc/tools/MarkdownGeneratorCLI.gd --godot_docs "3.5"
         working-directory: cordot
       - run: |
+          rm -r docs/classes
           mkdir -p docs/classes
           mv cordot/doc/classes/class_*.md docs/classes
       - name: Create Pull Request
